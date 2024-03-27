@@ -25,6 +25,7 @@
                 </p>
                 <h1>TESSSS</h1>
                 <h1>TESSSSSSSSS2222</h1>
+                <h1>TESSSSSSSSS2222</h1>
             </div>
             <img src="Media/5735C002_xa75_primary.png" alt="Gambar kamera" class="w-full md:w-1/2 mt-8 md:mt-0">
         </div>
