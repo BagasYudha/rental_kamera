@@ -6,7 +6,7 @@
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <title>Login Page</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/adminlogin.css">
+    <link rel="stylesheet" href="adminlogin.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
 </head>
 
