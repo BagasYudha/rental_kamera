@@ -1,0 +1,64 @@
+body {
+    background-color: #E8FFFB;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #E8FFFB;
+    padding: 10px;
+    display: flex;
+}
+
+.logo {
+    width: 200px;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+}
+
+.right { 
+    flex: 2;
+    padding: 20px;
+    background-color: #ffffff;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.harga {
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: bold;
+}
+
+.logo-whatsapp {
+    display: flex;
+    align-items: center; 
+    background-color: #ae00ff;
+}
+
+
+.logo-whatsapp img {
+    width: 45px;
+    margin-left: 10px; /* Memberi jarak antara logo WhatsApp dan teks harga */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
