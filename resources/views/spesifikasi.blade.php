@@ -9,31 +9,29 @@
 <body>
     <header>
         <div class="logo">
-            <img src="./mboh/KaryCam.png" alt="CaryCam" width="100" height="75"> 
+            <img src="./img/KaryCam.png" alt="CaryCam" width="100" height="75"> 
         </div>
     </header>
     <main>
-        <div class="NamCam"></div>
-            <h1>CannonEOS250D</h1>
         <div class="container">
-            <div class="camera">
-            <img src="./mboh/EOS250.png" alt="Canon" width="250" height="225">
+            <div class="left">
+            <img src="./img/EOS250.png" alt="Kamera">
+            <div class="harga">Tersedia : 6<br>
+                Harga: Rp. 50.000/Hari</div>
+            <a class="logo-whatsapp" href="https://wa.me/6281331571129" target="_blank"><img src="./img/Whatsapp.png" alt="WhatsApp"></a>
             </div>
-            <div class="Harga">
-            <h3>Rp. 50.000/Hari</h3>
-            <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=628123456789&text=Halo,%20saya%20tertarik%20dengan%20sewa%20Canon%20EOS%20250D%20RP.%2050.000%20per%20hari.">
-                <img src="./mboh/IconWA.png" alt="WhatsApp icon">
-            </a>
-            </div>
-            <div class="spesifikasi">
-            <h1>Spesifikasi</h1>
+            <div class="right">
+            <h2>Spesifikasi Kamera</h2>
             <ul>
                 <li>Image Sensor
-                    - Type: 22.3 mm x 14.9 mm CMOS
-                    - Effective Pixels: Approx. 24.10 megapixels
-                    - Total Pixels: Approx. 25.80 megapixels
-                    - Aspect Ratio: 3:2
-                    - Low-Pass Filter: Built-in/Fixed
+                <li>Type: 22.3 mm x 14.9 mm CMOS</li>
+                <li>- Effective Pixels: Approx. 24.10 megapixels</li>
+                <li>- Total Pixels: Approx. 25.80 megapixels</li>
+                <li>- Aspect Ratio: 3:2</li>
+                <li>- Low-Pass Filter: Built-in/Fixed</li>
+                
+                    
+                    
                     - Sensor Cleaning: EOS integrated cleaning system
                     - Colour Filter Type: Primary Colour
                     
