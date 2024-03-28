@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="./Admin.css" />
+    <link rel="stylesheet" href="{{ ('css/Admin.css') }}">
     <!-- <link rel="stylesheet" href="./index.css" /> -->
     <link
       rel="stylesheet"
@@ -138,7 +138,7 @@
         </div>
         <img class="navbar-child" alt="" src="./public/rectangle-22.svg" />
 
-        <img class="logo-icon" alt="" src="./gambar/Artboard 3.png" />
+        <img class="logo-icon" alt="" src="{{ ('css/gambar/Artboard 3.png') }}" />
       </div>
     </div>
 

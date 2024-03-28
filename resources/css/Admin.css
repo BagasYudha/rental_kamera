@@ -1,0 +1,651 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-poppins: Poppins;
+  
+    /* font sizes */
+    --font-size-3xl: 22px;
+    --font-size-xl: 20px;
+  
+    /* Colors */
+    --color-lightcyan: #e8fffb;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-mediumslateblue: #9162fa;
+    --color-gray: rgba(255, 255, 255, 0);
+  
+    /* Border radiuses */
+    --br-3xs: 10px;
+  }
+  
+.aksi,
+.harga-sewahari,
+.kategori,
+.nama,
+.no,
+.stock {
+  position: absolute;
+  top: 238px;
+  left: 183px;
+  display: inline-block;
+  width: 144px;
+  height: 40px;
+}
+.aksi,
+.harga-sewahari,
+.kategori,
+.no,
+.stock {
+  left: 81px;
+}
+.aksi,
+.harga-sewahari,
+.kategori,
+.stock {
+  left: 705px;
+  width: 207px;
+}
+.aksi,
+.kategori,
+.stock {
+  left: 513px;
+}
+.aksi,
+.stock {
+  left: 961px;
+  width: 144px;
+}
+.aksi {
+  top: 241px;
+  left: 1223px;
+  width: 82px;
+  height: 35px;
+}
+.canon-eos250d {
+  left: 183px;
+  width: 354px;
+}
+.canon-eos250d,
+.div,
+.div1,
+.kamera,
+.rp-50000 {
+  position: absolute;
+  top: 281px;
+  font-weight: 600;
+  display: inline-block;
+  height: 35px;
+}
+.div {
+  left: 72px;
+  text-align: center;
+  width: 48px;
+}
+.div1,
+.kamera,
+.rp-50000 {
+  left: 705px;
+  width: 171px;
+}
+.div1,
+.kamera {
+  left: 513px;
+}
+.div1 {
+  left: 961px;
+}
+.group-child {
+  position: absolute;
+  top: 0;
+  left: 2.1px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray);
+  border: 3px solid var(--color-mediumslateblue);
+  box-sizing: border-box;
+  width: 89.5px;
+  height: 38px;
+}
+.edit,
+.rectangle-parent {
+  position: absolute;
+  width: 93px;
+}
+.edit {
+  top: 2px;
+  left: 0;
+  font-weight: 500;
+  display: inline-block;
+  height: 28.5px;
+  text-shadow: 1px 0 0 transparent, 0 1px 0 transparent, -1px 0 0 transparent,
+    0-1px 0 transparent;
+}
+.rectangle-parent {
+  top: 278px;
+  left: 1144px;
+  height: 38px;
+  cursor: pointer;
+  text-align: center;
+  color: var(--color-mediumslateblue);
+}
+.group-item {
+  position: absolute;
+  top: 0;
+  left: 2.4px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-mediumslateblue);
+  width: 104.9px;
+  height: 38px;
+}
+.hapus,
+.rectangle-group {
+  position: absolute;
+  width: 109px;
+}
+.hapus {
+  top: 3px;
+  left: 0;
+  font-weight: 500;
+  display: inline-block;
+  height: 28.5px;
+}
+.rectangle-group {
+  top: 278px;
+  left: 1243px;
+  height: 38px;
+  text-align: center;
+  color: var(--color-white);
+}
+.canon-mark-iii,
+.canon-r6,
+.sony-tele {
+  position: absolute;
+  top: 324px;
+  left: 183px;
+  font-weight: 600;
+  display: inline-block;
+  width: 354px;
+  height: 35px;
+}
+.canon-r6,
+.sony-tele {
+  top: 367px;
+}
+.canon-r6 {
+  top: 410px;
+}
+.canon-90d,
+.canon-fix-32mm,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.nikko-tele-400m,
+.sony-g-mount-28 {
+  position: absolute;
+  top: 453px;
+  left: 183px;
+  font-weight: 600;
+  display: inline-block;
+  width: 354px;
+  height: 35px;
+}
+.canon-90d,
+.canon-fix-32mm,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.sony-g-mount-28 {
+  top: 496px;
+}
+.canon-90d,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.sony-g-mount-28 {
+  top: 539px;
+}
+.canon-90d,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8 {
+  top: 582px;
+}
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8 {
+  top: 324px;
+  left: 72px;
+  text-align: center;
+  width: 48px;
+}
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8 {
+  top: 367px;
+}
+.div4,
+.div5,
+.div6,
+.div7,
+.div8 {
+  top: 410px;
+}
+.div5,
+.div6,
+.div7,
+.div8 {
+  top: 453px;
+}
+.div6,
+.div7,
+.div8 {
+  top: 496px;
+}
+.div7,
+.div8 {
+  top: 539px;
+}
+.div8 {
+  top: 582px;
+}
+.kamera1,
+.lensa,
+.rp-130000,
+.rp-30000,
+.rp-40000,
+.rp-55000,
+.rp-60000,
+.rp-600001,
+.rp-80000 {
+  position: absolute;
+  top: 324px;
+  left: 705px;
+  font-weight: 600;
+  display: inline-block;
+  width: 171px;
+  height: 35px;
+}
+.kamera1,
+.lensa,
+.rp-130000,
+.rp-30000,
+.rp-40000,
+.rp-55000,
+.rp-600001,
+.rp-80000 {
+  top: 367px;
+}
+.kamera1,
+.lensa,
+.rp-130000,
+.rp-30000,
+.rp-40000,
+.rp-55000,
+.rp-600001 {
+  top: 410px;
+}
+.kamera1,
+.lensa,
+.rp-130000,
+.rp-30000,
+.rp-40000,
+.rp-600001 {
+  top: 453px;
+}
+.kamera1,
+.lensa,
+.rp-30000,
+.rp-40000,
+.rp-600001 {
+  top: 496px;
+}
+.kamera1,
+.lensa,
+.rp-40000,
+.rp-600001 {
+  top: 539px;
+}
+.kamera1,
+.lensa,
+.rp-600001 {
+  top: 582px;
+}
+.kamera1,
+.lensa {
+  top: 324px;
+  left: 513px;
+}
+.lensa {
+  top: 367px;
+}
+.div10,
+.div11,
+.div12,
+.div13,
+.div14,
+.div15,
+.div9,
+.kamera2,
+.kamera3,
+.lensa1,
+.lensa2,
+.lensa3 {
+  position: absolute;
+  top: 410px;
+  left: 513px;
+  font-weight: 600;
+  display: inline-block;
+  width: 171px;
+  height: 35px;
+}
+.div10,
+.div11,
+.div12,
+.div13,
+.div14,
+.div15,
+.div9,
+.kamera3,
+.lensa1,
+.lensa2,
+.lensa3 {
+  top: 453px;
+}
+.div10,
+.div11,
+.div12,
+.div13,
+.div14,
+.div15,
+.div9,
+.kamera3,
+.lensa2,
+.lensa3 {
+  top: 496px;
+}
+.div10,
+.div11,
+.div12,
+.div13,
+.div14,
+.div15,
+.div9,
+.kamera3,
+.lensa3 {
+  top: 539px;
+}
+.div10,
+.div11,
+.div12,
+.div13,
+.div14,
+.div15,
+.div9,
+.kamera3 {
+  top: 582px;
+}
+.div10,
+.div11,
+.div12,
+.div13,
+.div14,
+.div15,
+.div9 {
+  top: 324px;
+  left: 961px;
+}
+.div10,
+.div11,
+.div12,
+.div13,
+.div14,
+.div15 {
+  top: 367px;
+}
+.div11,
+.div12,
+.div13,
+.div14,
+.div15 {
+  top: 410px;
+}
+.div12,
+.div13,
+.div14,
+.div15 {
+  top: 453px;
+}
+.div13,
+.div14,
+.div15 {
+  top: 496px;
+}
+.div14,
+.div15 {
+  top: 539px;
+}
+.div15 {
+  top: 582px;
+}
+.group-div,
+.rectangle-container,
+.rectangle-parent1,
+.rectangle-parent2,
+.rectangle-parent3,
+.rectangle-parent4,
+.rectangle-parent5 {
+  position: absolute;
+  top: 321px;
+  left: 1144px;
+  width: 93px;
+  height: 38px;
+  cursor: pointer;
+  text-align: center;
+  color: var(--color-mediumslateblue);
+}
+.group-div,
+.rectangle-parent1,
+.rectangle-parent2,
+.rectangle-parent3,
+.rectangle-parent4,
+.rectangle-parent5 {
+  top: 364px;
+}
+.rectangle-parent1,
+.rectangle-parent2,
+.rectangle-parent3,
+.rectangle-parent4,
+.rectangle-parent5 {
+  top: 407px;
+}
+.rectangle-parent2,
+.rectangle-parent3,
+.rectangle-parent4,
+.rectangle-parent5 {
+  top: 450px;
+}
+.rectangle-parent3,
+.rectangle-parent4,
+.rectangle-parent5 {
+  top: 493px;
+}
+.rectangle-parent4,
+.rectangle-parent5 {
+  top: 536px;
+}
+.rectangle-parent5 {
+  top: 579px;
+}
+.rectangle-parent6,
+.rectangle-parent7 {
+  position: absolute;
+  top: 321px;
+  left: 1243px;
+  width: 109px;
+  height: 38px;
+  text-align: center;
+  color: var(--color-white);
+}
+.rectangle-parent7 {
+  top: 364px;
+}
+.rectangle-parent10,
+.rectangle-parent11,
+.rectangle-parent12,
+.rectangle-parent8,
+.rectangle-parent9 {
+  position: absolute;
+  top: 407px;
+  left: 1243px;
+  width: 109px;
+  height: 38px;
+  text-align: center;
+  color: var(--color-white);
+}
+.rectangle-parent10,
+.rectangle-parent11,
+.rectangle-parent12,
+.rectangle-parent9 {
+  top: 450px;
+}
+.rectangle-parent10,
+.rectangle-parent11,
+.rectangle-parent12 {
+  top: 493px;
+}
+.rectangle-parent11,
+.rectangle-parent12 {
+  top: 536px;
+}
+.rectangle-parent12 {
+  top: 579px;
+}
+.admin-child {
+  position: absolute;
+  top: 219px;
+  left: 81px;
+  max-height: 100%;
+  width: 1287px;
+}
+.daftar-barang {
+  position: absolute;
+  top: 151px;
+  left: 81px;
+  font-size: 32px;
+  font-weight: 500;
+}
+.tambah-barang-child {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  border-radius: 23px;
+  background-color: var(--color-mediumslateblue);
+  width: 254px;
+  height: 38px;
+}
+.tambah-item {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  display: inline-block;
+  width: 278px;
+  height: 36px;
+}
+.dashboard,
+.tambah-barang {
+  position: absolute;
+  cursor: pointer;
+}
+.tambah-barang {
+  top: 151px;
+  left: 1115px;
+  width: 278px;
+  height: 38px;
+  text-align: center;
+  font-size: 24px;
+  color: var(--color-white);
+}
+.dashboard {
+  top: 43px;
+  left: 964px;
+  display: inline-block;
+  width: 225px;
+  height: 43px;
+}
+.span {
+  font-weight: 500;
+}
+.transaksi {
+  position: absolute;
+  top: 43px;
+  left: 1207px;
+  display: inline-block;
+  width: 151px;
+  height: 43px;
+  cursor: pointer;
+}
+.logo-icon,
+.navbar-child {
+  position: absolute;
+  top: 76px;
+  left: 1010px;
+  width: 134px;
+  height: 5px;
+}
+.logo-icon {
+  top: 26px;
+  left: 20px;
+  width: 321px;
+  height: 83px;
+  object-fit: cover;
+}
+.admin,
+.navbar {
+  background-color: var(--color-lightcyan);
+  overflow: hidden;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 129px;
+  text-align: center;
+  font-size: var(--font-size-3xl);
+}
+.admin {
+  width: 100%;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  height: 900px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
