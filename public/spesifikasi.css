@@ -15,65 +15,50 @@ header {
     margin-top: 1px;
 }
 
-main {
+.container {
+    display: flex;
+}
+
+.left {
+    flex: 1;
     padding: 20px;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.camera {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    min-width: 500px;
-    margin-left: 0px;
-}
-
-  .Harga { /* Style the price class */
-    font-size: 24px;
-    font-weight: bold;
-    text-align: bottom; /* Adjust as needed for desired placement */
-    margin-bottom: 10px; /* Add some margin for spacing */
-}
-
-.whatsapp-link {
-    margin-left: 10px;
-}
-
-.whatsapp-link img {
-    width: 32px;
-    height: 32px;
-}
-
-.spesifikasi {
-    display: flex-start;
-    flex-direction: column;
-    align-items: left;
-    min-width: 600px;
+.right { 
+    flex: 2;
+    padding: 20px;
     background-color: #ffffff;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.harga {
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: bold;
+}
+
+.logo-whatsapp {
+    display: flex;
+    align-items: center; 
+    background-color: #ae00ff;
 }
 
 
-.camera img {
-    margin-bottom: 0px;
-    float: left;
+.logo-whatsapp img {
+    width: 45px;
+    margin-left: 10px; /* Memberi jarak antara logo WhatsApp dan teks harga */
 }
 
-.spesifikasi h1{
-    margin: 100;
-    text-align: left;
-}
-
-.spesifikasi ul {
-    list-style: none;
+ul {
+    list-style-type: none;
     padding: 0;
-    text-align: left;
 }
 
-.spesifikasi li {
-    margin: 5px;
-    text-align: left;
+li {
+    margin-bottom: 10px;
 }
