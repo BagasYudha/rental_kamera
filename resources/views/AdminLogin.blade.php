@@ -41,7 +41,7 @@
         </div>
         <div class="ellipse-parent">
             <div class="ellipse-div"></div>
-            <img class="c002-xa75-primary-1-icon" loading="lazy" alt="" src="images/v347_566.png">
+            <img class="c002-xa75-primary-1-icon" loading="lazy" alt="" src="media/imageadminlogin.png">
         </div>
     </div>
 
