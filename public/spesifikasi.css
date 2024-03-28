@@ -1,0 +1,79 @@
+body {
+    background-color: #E8FFFB;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #E8FFFB;
+    padding: 10px;
+    display: flex;
+}
+
+.logo {
+    width: 200px;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.camera {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    min-width: 500px;
+    margin-left: 0px;
+}
+
+  .Harga { /* Style the price class */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: bottom; /* Adjust as needed for desired placement */
+    margin-bottom: 10px; /* Add some margin for spacing */
+}
+
+.whatsapp-link {
+    margin-left: 10px;
+}
+
+.whatsapp-link img {
+    width: 32px;
+    height: 32px;
+}
+
+.spesifikasi {
+    display: flex-start;
+    flex-direction: column;
+    align-items: left;
+    min-width: 600px;
+    background-color: #ffffff;
+}
+
+
+.camera img {
+    margin-bottom: 0px;
+    float: left;
+}
+
+.spesifikasi h1{
+    margin: 100;
+    text-align: left;
+}
+
+.spesifikasi ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.spesifikasi li {
+    margin: 5px;
+    text-align: left;
+}
