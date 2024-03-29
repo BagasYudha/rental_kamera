@@ -10,19 +10,19 @@
 <body>
     <header>
         <div class="logo">
-            <img src="./img/KaryCam.png" alt="CaryCam" width="175" height="160"> 
+            <img src="./Media/Logo-hitam.png" alt="CaryCam" width="175" height="160"> 
         </div>
     </header>
     <main>
         <div class="container">
             <div class="left">
             <h3 class="NamaBarang">Canon EOS250D</h3>
-            <img src="./img/EOS250.png" alt="Kamera">
+            <img src="./Media/rental/public/Media/rental/EOS250.png" alt="Kamera">
             <div class="harga">Tersedia : 6<br>
                 Harga: Rp. 50.000/Hari</div>
             <div class="logo-whatsapp">
                 <a href="https://wa.me/6281331571129" class="whatsapp-link" target="_blank">
-                <img src="./img/Whatsapp.png" alt="WhatsApp"><span class="whatsapp-text">Booking</span>
+                <img src="./Media/Icon/Whatsapp.png" alt="WhatsApp"><span class="whatsapp-text">Booking</span>
             </a>
             </div>
             </div>
