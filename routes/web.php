@@ -13,3 +13,7 @@ Route::get('/adminlog', function () {
 Route::get('/admin', function () {
     return view('Admin');
 });
+
+Route::get('/navbar', function () {
+    return view('navbar');
+});

@@ -9,9 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Tambahkan font Poppins dari Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    @vite('resources/css/app.css')
 </head>
 
 <body class="bg-green-50 font-poppins">
+    @include('includes.navbar');
 
     <!-- CONTAIN 1 -->
     <div class=" wrapper-2 py-16 px-4 sm:px-6 lg:px-8">
@@ -19,7 +21,7 @@
             <div class="flex flex-col justify-center items-center md:flex-row md:justify-between">
                 <div class="teks-1 text-center md:text-left md:w-1/2 md:pr-8">
                     <h3 class="text-lg md:text-xl font-medium text-gray-800">Selamat datang di</h3>
-                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mt-2">KaryCam</h1>
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mt-2 bg-gradient-to-r from-violet-500 to-fuchsia-500">KaryCam</h1>
                     <p class="mt-4 text-base md:text-lg text-gray-700">
                         Kami merupakan perusahaan jasa rental kamera <br>
                         yang didirikan oleh Adi Alam, Bagas Yudha, Bintang Raka, <br>
