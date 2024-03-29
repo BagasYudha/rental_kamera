@@ -17,3 +17,7 @@ Route::get('/admin', function () {
 Route::get('/navbar', function () {
     return view('navbar');
 });
+
+Route::get('/spesifikasi', function () {
+    return view('spesifikasi');
+});
