@@ -10,12 +10,13 @@
 <body>
     <header>
         <div class="logo">
-            <img src="./img/KaryCam.png" alt="CaryCam" width="100" height="75"> 
+            <img src="./img/KaryCam.png" alt="CaryCam" width="175" height="160"> 
         </div>
     </header>
     <main>
         <div class="container">
             <div class="left">
+            <h3 class="NamaBarang">Canon EOS250D</h3>
             <img src="./img/EOS250.png" alt="Kamera">
             <div class="harga">Tersedia : 6<br>
                 Harga: Rp. 50.000/Hari</div>
