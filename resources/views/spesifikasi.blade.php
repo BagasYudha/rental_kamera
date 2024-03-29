@@ -22,7 +22,7 @@
                 Harga: Rp. 50.000/Hari</div>
             <div class="logo-whatsapp">
                 <a href="https://wa.me/6281331571129" class="whatsapp-link" target="_blank">
-                <img src="./Media/Icon/Whatsapp.png" alt="WhatsApp"><span class="whatsapp-text">Booking</span>
+                <img src="./Media/Icon/Instagram.png" alt="WhatsApp"><span class="whatsapp-text">Booking</span>
             </a>
             </div>
             </div>
