@@ -17,12 +17,12 @@
         <div class="container">
             <div class="left">
             <h3 class="NamaBarang">Canon EOS250D</h3>
-            <img src="./Media/rental/public/Media/rental/EOS250.png" alt="Kamera">
+            <img src="./Media/rental/26_eos_250d_bk_thefront_ef-s18-55iii_d4120ae9eba94280ab1158c449525a54.png" alt="Kamera">
             <div class="harga">Tersedia : 6<br>
                 Harga: Rp. 50.000/Hari</div>
             <div class="logo-whatsapp">
                 <a href="https://wa.me/6281331571129" class="whatsapp-link" target="_blank">
-                <img src="./Media/Icon/Whatsapp.png" alt="WhatsApp"><span class="whatsapp-text">Booking</span>
+                <img src="./Media/Icon/Instagram.png" alt="WhatsApp"><span class="whatsapp-text">Booking</span>
             </a>
             </div>
             </div>
