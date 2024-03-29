@@ -10,16 +10,16 @@ header {
 }
 
 .logo {
-    width: 200px;
     margin-left: 1px;
     margin-top: 1px;
+    margin-bottom: 10px;
 }
 
 .container {
     display: flex;
 }
 
-.left {
+.left { 
     flex: 1;
     padding: 20px;
     position: fixed;
@@ -27,20 +27,34 @@ header {
     left: 0;
 }
 
-.right { 
+.NamaBarang { /* Nama barangnya */
+    position: absolute;
+    top: 80px;
+    left: 100px; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px; 
+}
+
+
+.right { /* Iki bagian spesifikasi */
     flex: 2;
     padding: 50px;
     background-color: #ffffff;
     overflow-y: auto;
-    margin-left: 700px;
+    margin-left: 600px;
     margin-right: 80px;
     position: relative;
+    border-radius: 25px; 
 }
 
-.left img {
-    max-width: 300px; 
+.left img { /* Iki bagian gambar barang */
+    max-width: 280px; 
     height: auto;
-    margin-top: 70px
+    margin-top: 130px;
+    margin-left: 70px;
+    border: 2px solid #ae00ff; /* border */
+    padding: 20px; 
+    border-radius: 10px;
 }
 
 img {
@@ -52,21 +66,24 @@ img {
     margin-top: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    margin-left: 70px;
 }
 
 .logo-whatsapp {
     display: flex;
     align-items: center; 
     background-color: #ae00ff;
-    width: 175px;
+    width: 200px;
     height: 45px;
-    
+    margin-left: 70px;
+    border-radius: 25px; 
 }
 
 .logo-whatsapp img {
     width: 35px;
     margin-left: 10px; 
-    margin-bottom: 70px;
+    margin-bottom: 130px;
+    border: none;
 }
 
 .whatsapp-link {
@@ -75,10 +92,9 @@ img {
     align-items: center;
 }
 
-
-.whatsapp-text {
+.whatsapp-text { /* Teks BOOKING */
     font-size: 20px; 
-    margin-left: 10px;
+    margin-left: 1px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: #E8FFFB;
