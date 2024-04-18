@@ -1,17 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: [
+    mode: "jit", // Aktifkan mode JIT (Just-In-Time)
+    purge: [
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
         "./resources/**/*.vue",
     ],
     theme: {
         extend: {
-            colors: {
-                bg: '#93c5fd',
-            }
+            backgroundColor: {
+                bg: "#aaaa",
+            },
         },
     },
-    plugins: [],
+    plugins: [
+        // Daftarkan plugin jika diperlukan
+    ],
 };
-
