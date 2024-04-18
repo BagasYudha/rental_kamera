@@ -1,8 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: ["./resources/css/**/*.{html,js}"],
+    content: [
+        "./resources/**/*.blade.php",
+        "./resources/**/*.js",
+        "./resources/**/*.vue",
+    ],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                bg: '#93c5fd',
+            }
+        },
     },
     plugins: [],
 };
+
