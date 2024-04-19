@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="font-['Poppins'] w-full overflow-x-hidden">
+<body class="bg-[#E8FFFB] font-['Poppins'] w-full overflow-x-hidden">
 
     <!-- NAVBAR -->
     <div class="fixed w-full z-10">
@@ -27,17 +27,17 @@
     <section id="Home" class="pt-32 px-[50px]">
         <div class="flex w-full">
             <!-- div teks -->
-            <div class="">
-                <h3 class="">Selamat datang di</h3>
-                <h1 class="font-bold text-6xl text-zinc-600">KaryCam</h1>
-                <p>
+            <div class="md:mt-36">
+                <h3 class="text-2xl">Selamat datang di</h3>
+                <h1 class="font-semibold text-7xl" style="background: linear-gradient(to right, #4F46E5, #02CCFE); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent; ">KaryCam!</h1>
+                <p class="mt-3 text-lg">
                     Kami merupakan perusahaan jasa rental kamera <br>
                     yang didirikan oleh Adi Alam, Bagas Yudha, Bintang Raka, <br>
                     dan Muhammand Miftahul Karim.
                 </p>
             </div>
             <!-- div gambar -->
-            <div class="absolute right-[-400px]">
+            <div class="absolute right-[-300px]">
                 <div class="relative">
                     <img src="Media/imageadminlogin.png" alt="Gambar kamera" class="top-0 z-1">
                     <span class="absolute top-0 w-full -z-10">
@@ -53,8 +53,12 @@
     <!-- CONTAIN 1 END -->
 
     <!-- CONTAIN 2 -->
-    <section>
-        <div>
+    <section id="Contact" class="px-[50px] mt-[600px]">
+        <div class="font-bold text-5xl text-black">
+            <h1 class="">Ada Project ?</h1>
+            <h1 class="mt-3">Konsultasi peralatan ?</h1>
+            <h1 class="mt-3">Mau sewa gear produksi ?</h1>
+            <h1 class="mt-3">Atau ngajak mimin ngopi ?</h1>
         </div>
     </section>
 </body>
