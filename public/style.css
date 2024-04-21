@@ -1,3 +1,9 @@
+:root {
+  --primary: #3498db;
+  --my-grey: #8152FB;
+  --soft-blue: #33BAFF;
+}
+
 .body {
-    font: "poppins";
+    
 }
