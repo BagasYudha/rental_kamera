@@ -39,7 +39,7 @@
                 </p>
             </div>
             <!-- div gambar -->
-            <div class="absolute right-[-300px]">
+            <div class="absolute right-[-300px] mt-[-30px]">
                 <div class="relative">
                     <img src="Media/imageadminlogin.png" alt="Gambar kamera" class="top-0 z-1">
                     <span class="absolute top-0 w-full -z-10">
@@ -55,7 +55,7 @@
     <!-- CONTAIN 1 END -->
 
     <!-- CONTAIN 2 -->
-    <section id="Contact" class="px-[50px] mt-[600px] z-10">
+    <section id="Contact" class="px-[50px] mt-[450px] z-10">
         <div class="font-semibold text-6xl text-black">
             <h1 class="">Ada Project ?</h1>
             <h1 class="mt-3">Konsultasi peralatan ?</h1>
@@ -63,7 +63,7 @@
             <h1 class="mt-3">Atau ngajak mimin ngopi ?</h1>
         </div>
         <!-- Footer Start -->
-        <footer class="mt-24 mb-16 flex bottom-0 ">
+        <footer class="mt-20 flex bottom-0 ">
             <div class="flex items-center z-10 ">
                 <!-- Contact -->
                 <div class="flex border-r-[5px] border-r-[#8152FB] w-[250px]">
@@ -79,7 +79,7 @@
                 <!-- Contact End -->
 
                 <!-- Location -->
-                <div class="ml-4 flex border-r-[5px] border-r-[#8152FB] w-[250px] ">
+                <div class="ml-4 flex border-r-[5px] border-r-[#8152FB] w-[220px] ">
                     <a href="https://maps.app.goo.gl/yJyt7GwZaoZVRmHs7?g_st=ic" target="_blank" class="">
                         <div class="flex items-center ">
                             <i class="bordertext-black w-16 h-16 text-black hover:text-red-600" data-feather="map-pin"></i>
@@ -94,7 +94,7 @@
                 <!-- Instagram  -->
                 <div class="ml-4 flexs w-[250px] z-10">
                     <a href="https://www.instagram.com/instagram?igsh=MXcycjNmZTFmcW4ycQ==" target="_blank" class="">
-                        <div class="flex items-center ">
+                        <div class="flex items-center  ">
                             <i class="bordertext-black w-16 h-16 text-black hover:text-[#ee2a7b]" data-feather="instagram"></i>
                             <div class="mx-3 w-40 items-center text-xl font-medium text-black hover:text-[#8152FB]">
                                 <h3>Mau stalk yaa?</h3>
@@ -105,13 +105,12 @@
                 <!-- Instagram End -->
             </div>
             <!-- Footer Image -->
-            <div class="absolute right-[-300px] w-[800px] h-auto">
+            <div class="absolute mt-[-150px] right-[-140px] w-[700px] h-auto">
                 <div class="">
-                    <img src="Media/Lens-foot.png" alt="Gambar kamera" class="top-0 -z-10">
+                    <img src="Media/Lens-foot.png" alt="Gambar kamera" class="bottom-0 top-0 -z-10">
                     </span>
                 </div>
             </div>
-
             <!-- Footer Image End-->
         </footer>
         <!-- Footer End -->
