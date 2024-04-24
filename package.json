@@ -21,5 +21,8 @@
     "test": "tests"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "feather-icon": "^0.1.0"
+  }
 }

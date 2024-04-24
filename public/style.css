@@ -1,0 +1,44 @@
+:root {
+    --primary: #3498db;
+    --my-grey: #8152fb;
+    --soft-blue: #33baff;
+}
+
+@keyframes slideUnderline {
+    0% {
+        width: 0;
+        left: 0;
+    }
+    100% {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.link {
+    position: relative;
+    @apply relative font-bold px-3 py-2 mx-3;
+    color: black; /* Warna teks default */
+    transition: color 0.3s ease; /* Transisi warna teks */
+}
+
+.link::after {
+    @apply block absolute bottom-0 left-0 w-0 h-2 bg-white;
+    content: "";
+    transition: width 0.3s ease;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #33baff;
+}
+
+.link:hover {
+    color: #33baff;
+}
+
+.link:hover::after {
+    width: 100%;
+}
