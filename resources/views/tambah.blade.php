@@ -47,6 +47,6 @@
               </div>
             </div>
           </div>
-          <button type="submit">SELESAI</button>
+          <button href="{{ route('products.create') }}" type="submit">SELESAI</button>
         </form>
       </div>
