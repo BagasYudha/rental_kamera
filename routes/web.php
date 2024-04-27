@@ -26,6 +26,11 @@ Route::get('/Transaksi', function () {
     return view('Transaksi');
 });
 
+Route::get('/rental', function () {
+    return view('rental');
+});
+
+
 //route resource for products
 Route::resource('/products', \App\Http\Controllers\ProductController::class);
 
