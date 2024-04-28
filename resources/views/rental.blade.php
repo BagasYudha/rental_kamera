@@ -29,7 +29,7 @@
     <section id="Home" class="pt-32 px-[50px]">
         <div class="flex w-full">
             <!-- div teks -->
-            <div class="md:mt-14 z-10 fixed bg-slate-400 w-1/3">
+            <div class="md:mt-14 z-10 fixed w-1/3">
                 <h3 class="text-xl">Selamat datang di</h3>
                 <h1 class="font-semibold text-6xl" style="background: linear-gradient(to right, #4F46E5, #02CCFE); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent; ">KaryCam!</h1>
                 <p class="mt-3 text-lg">
@@ -38,23 +38,23 @@
                 </p>
 
                 <!-- Menu -->
-                <div class="mt-2 font-bold text-[#8152fb] flex">
+                <div class="mt-2 font-bold text-black flex-wrap">
                     <a href="#">
-                        <h1 class="mt-3 mr-3 inline-block bg-slate-400 border-2 border-[#8152fb] rounded-full p-1 px-6">Kamera</h1>
+                        <h1 class="mt-3 mr-3 inline-block  border-2 border-[#8152fb] hover:text-[#8152FB] rounded-full p-1 px-6">Kamera</h1>
                     </a>
                     <a href="#">
-                        <h1 class="mt-3 mr-3 inline-block bg-slate-400 border-2 border-[#8152fb] rounded-full p-1 px-6">Kamera</h1>
+                        <h1 class="mt-3 mr-3 inline-block hover:text-[#8152FB] border-2 border-[#8152fb] rounded-full p-1 px-6">Lensa</h1>
                     </a>
                     <a href="#">
-                        <h1 class="mt-3 mr-3 inline-block bg-slate-400 border-2 border-[#8152fb] rounded-full p-1 px-6">Kamera</h1>
+                        <h1 class="mt-3 mr-3 inline-block hover:text-[#8152FB] border-2 border-[#8152fb] rounded-full p-1 px-6">Lightning</h1>
                     </a>
                     <a href="#">
-                        <h1 class="mt-3 mr-3 inline-block bg-slate-400 border-2 border-[#8152fb] rounded-full p-1 px-6">Kamera</h1>
+                        <h1 class="mt-3 mr-3 inline-block hover:text-[#8152FB] border-2 border-[#8152fb] rounded-full p-1 px-6">Tripod</h1>
                     </a>
                     <a href="#">
-                        <h1 class="mt-3 mr-3 inline-block bg-slate-400 border-2 border-[#8152fb] rounded-full p-1 px-6">Kamera</h1>
+                        <h1 class="mt-3 mr-3 inline-block hover:text-[#8152FB] border-2 border-[#8152fb] rounded-full p-1 px-6">Aksesoris</h1>
                     </a>
-
+    
                 </div>
                 <!-- Menu End  -->
 
