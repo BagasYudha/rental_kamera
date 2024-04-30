@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-  <link rel="stylesheet" href="{{ ('Admin.css') }}">
+  <link rel="stylesheet" href="{{ asset('Admin.css') }}">
   <!-- <link rel="stylesheet" href="./index.css" /> -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
 </head>
@@ -139,6 +139,8 @@
 
       <img class="logo-icon" alt="" src="{{ ('css/gambar/Artboard 3.png') }}" />
     </div>
+    <!-- Misalnya, tambahkan tombol logout di dalam file Admin.blade.php -->
+
   </div>
 
   <script>

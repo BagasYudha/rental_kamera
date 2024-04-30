@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController; // Import the AdminController
 
 Route::get('/', function () {
     return view('index');
@@ -10,9 +11,11 @@ Route::get('/adminlog', function () {
     return view('AdminLogin');
 });
 
-Route::get('/admin', function () {
+Route::post('/admin/login', [AdminController::class, 'login'])->name('admin.login'); // Fix the route action for admin login process
+
+Route::get('/admin/dashboard', function () {
     return view('Admin');
-});
+})->name('admin.dashboard') ;
 
 Route::get('/navbar', function () {
     return view('navbar');
