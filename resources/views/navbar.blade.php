@@ -19,11 +19,10 @@
         </div>
         <div class="flex justify-end w-full h-full items-center font-sans">
             <a href="/" class="link font-bold px-3 py-2 mx-3">Beranda</a>
-            <a href="#" class="link font-bold px-3 py-2 mx-3">Rental</a>
+            <a href="/rental" class="link font-bold px-3 py-2 mx-3">Rental</a>
             <a href="/spesifikasi" class="link font-bold px-3 py-2 mx-3">Spesifikasi</a>
-            <a href="#Contact" class="link font-bold px-3 py-2 mx-3">Hubungi Kami</a>
+            <a href="/#Contact" class="link font-bold px-3 py-2 mx-3">Hubungi Kami</a>
         </div>
-
 
     </nav>
 

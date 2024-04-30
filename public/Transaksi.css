@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 20px; 
+  }
+
+  .TambahTransaksi {
+    background-color: #9162FA; 
+    color: #ffffff; 
+    text-decoration: none;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    margin-bottom: 20px; 
+  }
+  
+  .transaksi + hr {
+    border: 1px solid #864AFA;
+    margin-top: 0;
+
+
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 8px 16px;
+    border-bottom: 1px solid #864AFA;
+  }
+  
+  .table th {
+    text-align: left;
+  }
+
+  .selesai {
+    background-color: #9162FA;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .selesai:hover {
+    background-color: #45a049;
+  }
+  

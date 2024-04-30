@@ -24,3 +24,17 @@ Route::get('/navbar', function () {
 Route::get('/spesifikasi', function () {
     return view('spesifikasi');
 });
+
+Route::get('/Transaksi', function () {
+    return view('Transaksi');
+});
+
+Route::get('/rental', function () {
+    return view('rental');
+});
+
+
+//route resource for products
+Route::resource('/products', \App\Http\Controllers\ProductController::class);
+
+Route::post('/products', [\App\Http\Controllers\ProductController::class, 'store'])->name('products.store');

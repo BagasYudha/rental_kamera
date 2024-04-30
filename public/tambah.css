@@ -1,0 +1,75 @@
+.container {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+.grup-nama {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+.left label,
+.right label {
+  font-weight: bold;
+}
+
+.left input[type="text"],
+.right input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.grup-waktu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Input-Time {
+  margin-right: 100px;
+}
+
+.radio-group {
+  display: inline;
+  align-items: center;
+}
+
+.radio-group label {
+  margin-right: 10px;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+
+
+button {
+  display: block;
+  width: 10%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
