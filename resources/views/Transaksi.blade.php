@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transaksi</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="Transaksi.css">
 </head>
 <body>
@@ -12,47 +13,47 @@
 
         <div class="header-container">
             <h1>Transaksi</h1>
-            <a href="{{ route('products.create') }}" class="TambahTransaksi">Tambah Transaksi</a>
+            <a href="{{ route('transaksi.create') }}" class="TambahTransaksi">Tambah Transaksi</a>
           </div>
           <hr>
           
     <table class="table">
       <thead>
         <tr>
-          <th>No</th>
-          <th>Nama Peminjam</th>
-          <th>Jaminan</th>
-          <th>Nama Barang</th>
-          <th>Jam Ambil</th>
-          <th>Ambil</th>
-          <th>Kembali</th>
-          <th>Aksi</th>
+          <th scope="col">No</th>
+          <th scope="col">Nama Peminjam</th>
+          <th scope="col">Jaminan</th>
+          <th scope="col">Nama Barang</th>
+          <th scope="col">Jam Ambil</th>
+          <th scope="col">Tanggal Ambil</th>
+          <th scope="col">Tanggal Kembali</th>
+          <th scope="col"></th>
+          <th scope="col">Aksi</th>
         </tr>
       </thead>
-                            <tbody>
-                                @forelse ($products as $product)
-                                    <tr>
-                                        <td>{{ $product->Nama }}</td>
-                                        <td>{{ $product->Jaminan }}</td>
-                                        <td>{{ $product->Barang }}</td>
-                                        <td>{{ $product->Jam }}</td>
-                                        <td>{{ $product->Ambil }}</td>
-                                        <td>{{ $product->Kembali }}</td>
-                                        <td class="text-center">
-                                            <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('products.destroy', $product->id) }}" method="POST">
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
-                                            </form>
-                                        </td>
-                                    </tr>
-                                @empty
-                                
-                                    </div>
-                                @endforelse
+      <tbody>
+    @foreach ($admin as $transaksi)
+    <tr>
+        <td>{{ $loop->iteration }}</td>
+        <td>{{ $transaksi->nama }}</td>
+        <td>{{ $transaksi->jaminan }}</td>
+        <td>{{ $transaksi->namabarang }}</td>
+        <td>{{ $transaksi->jamAmbil }}</td>
+        <td>{{ $transaksi->tglAmbil }}</td>
+        <td>{{ $transaksi->tglKembali }}</td>
+        <td>{{ $transaksi->aksi }}</td>
+        <td class="text-center">
+            <form action="{{ route('transaksi.destroy', $transaksi->id) }}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="tombol">Selesai</button>
+            </form>
+        </td>
+    </tr>
+@endforeach
                             </tbody>
                         </table>
-                        {{ $products->links() }}
+                        {{ $admin->links() }}
                     </div>
                 </div>
             </div>

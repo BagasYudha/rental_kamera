@@ -2,74 +2,78 @@
   width: 80%;
   margin: 50px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #e8fffba1;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px #b4b4b4; 
 }
 
 h2 {
-  text-align: center;
+  color: #000cb8; 
+  margin-bottom: 60px; 
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
-.grup-nama {
-  margin-bottom: 20px;
+
+body {
+  background-color: #ebe9e9; 
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 30px; 
   display: flex;
-}
-
-.left,
-.right {
-  flex: 1;
-}
-
-.left label,
-.right label {
-  font-weight: bold;
-}
-
-.left input[type="text"],
-.right input[type="text"] {
-  width: 90%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.grup-waktu {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.Input-Time {
-  margin-right: 100px;
-}
-
-.radio-group {
-  display: inline;
   align-items: center;
 }
 
-.radio-group label {
-  margin-right: 10px;
+.left {
+  width: 50%; /* kolom nama penyewa */
+  display: flex;
+  align-items: center;
 }
 
-.radio-group input[type="radio"] {
-  margin-right: 5px;
+.right {
+  width: 50%; /* kolom jam ambil, tanggal ambil, dan tanggal kembali */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
+.form-group label {
+  width: 30%; 
+  font-weight: bold;
+  color: #000000; 
+  margin-left: 25px;
+  font-family: 'Poppins', sans-serif;
+}
 
+.form-group input[type="text"] {
+  flex: 1; 
+  padding: 12px; 
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #984bd8
+}
+
+.button-container {
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  margin-top: 30px; 
+}
 
 button {
-  display: block;
-  width: 10%;
+  width: 30%; 
   padding: 10px;
-  background-color: #007bff;
+  background-color: #984bd8;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.9s;
+  font-family: 'Poppins', sans-serif;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #300242; 
 }

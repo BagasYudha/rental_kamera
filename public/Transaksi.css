@@ -1,61 +1,68 @@
 body {
-    font-family: sans-serif;
-  }
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-  }
+  font-family: sans-serif;
+}
 
-  .header-container {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    margin-bottom: 20px; 
-  }
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  .TambahTransaksi {
-    background-color: #9162FA; 
-    color: #ffffff; 
-    text-decoration: none;
-    padding: 10px 20px; 
-    border: none; 
-    border-radius: 5px; 
-    margin-bottom: 20px; 
-  }
-  
-  .transaksi + hr {
-    border: 1px solid #864AFA;
-    margin-top: 0;
+.header-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 20px; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.TambahTransaksi {
+  background-color: #9162FA; 
+  color: #ffffff; 
+  text-decoration: none;
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px; 
+}
+
+.TambahTransaksi:hover{
+  background-color: #0e5b5e;
+}
+
+.transaksi + hr {
+  border: 1px solid #864AFA;
+  margin-top: 0;
 
 
-  }
-  .table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .table th,
-  .table td {
-    padding: 8px 16px;
-    border-bottom: 1px solid #864AFA;
-  }
-  
-  .table th {
-    text-align: left;
-  }
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Poppins', sans-serif;
+}
 
-  .selesai {
-    background-color: #9162FA;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+.table th,
+.table td {
+  padding: 8px 16px;
+  border-bottom: 1px solid #864AFA;
+}
 
-  .selesai:hover {
-    background-color: #45a049;
-  }
-  
+.table th {
+  text-align: left;
+}
+
+.tombol {
+  background-color: #864AFA; 
+  color: #ffffff;
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tombol:hover{
+  background-color: #210268;
+}

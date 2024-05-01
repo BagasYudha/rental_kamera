@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController; // Import the AdminController
+use App\Http\Controllers\TransaksiController;
+
 
 Route::get('/', function () {
     return view('index');
@@ -25,16 +27,18 @@ Route::get('/spesifikasi', function () {
     return view('spesifikasi');
 });
 
-Route::get('/Transaksi', function () {
-    return view('Transaksi');
-});
+// Route::get('/Transaksi', function () {
+//     return view('Transaksi');
+// });
 
 Route::get('/rental', function () {
     return view('rental');
 });
 
 
-//route resource for products
-Route::resource('/products', \App\Http\Controllers\ProductController::class);
-
-Route::post('/products', [\App\Http\Controllers\ProductController::class, 'store'])->name('products.store');
+Route::get('/Transaksi',[TransaksiController::class, 'index']);
+Route::get('/create', [TransaksiController::class, 'create'])->name('transaksi.create');
+// Route::post('/transaksi', [AdminController::class, 'store'])->name('admin.store');
+Route::get('/Transaksi', [TransaksiController::class, 'index'])->name('transaksi.index');
+Route::delete('/Transaksi/{id}', [TransaksiController::class, 'destroy'])->name('transaksi.destroy');
+Route::post('/Transaksi', [TransaksiController::class, 'store'])->name('transaksi.store');
