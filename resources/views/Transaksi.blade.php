@@ -32,7 +32,7 @@
         </tr>
       </thead>
       <tbody>
-    @foreach ($admin as $transaksi)
+    @foreach ($transaksis as $transaksi)
     <tr>
         <td>{{ $loop->iteration }}</td>
         <td>{{ $transaksi->nama }}</td>
@@ -53,7 +53,7 @@
 @endforeach
                             </tbody>
                         </table>
-                        {{ $admin->links() }}
+                        {{ $transaksis->links() }}
                     </div>
                 </div>
             </div>

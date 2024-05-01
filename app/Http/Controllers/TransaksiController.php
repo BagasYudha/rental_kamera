@@ -13,8 +13,9 @@ class TransaksiController extends Controller
      */
     public function index()
     {
-        $transaksi = transaksi::latest()->paginate(10);
-    return view('Transaksi')->with('Transaksi', $transaksi);
+        $transaksis = transaksi::latest()->paginate(10);
+        return view('Transaksi')->with('transaksis', $transaksis);
+
     }
 
     /**
