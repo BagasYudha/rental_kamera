@@ -24,7 +24,7 @@ Route::post('/forgot-password',[ForgotPassword::class,"index"])->name('auth.forg
 Route::post('/admin/login', [AdminController::class, 'login'])->name('admin.login'); // Fix the route action for admin login process
 
 Route::get('/admin/Transaksi', function () {
-    return view('Admin');
+    return view('Transaksi');
 })->name('admin.Transaksi') ;
 
 Route::get('/navbar', function () {
