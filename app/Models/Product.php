@@ -14,14 +14,11 @@ class Product extends Model
      *
      * @var array
      */
-
     protected $fillable = [
-        'Nama Peminjam',
-        'Jaminan',
-        'Nama Barang',
-        'Jam Ambil',
-        'Ambil',
-        'Kembali',
-
+        'image',
+        'title',
+        'description',
+        'price',
+        'stock',
     ];
 }

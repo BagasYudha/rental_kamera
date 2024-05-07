@@ -1,61 +1,108 @@
 body {
-    font-family: sans-serif;
-  }
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-  }
+  font-family: sans-serif;
+}
 
-  .header-container {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    margin-bottom: 20px; 
+@keyframes slideUnderline {
+  0% {
+      width: 0;
+      left: 0;
   }
+  100% {
+      width: 100%;
+      left: 0;
+  }
+}
 
-  .TambahTransaksi {
-    background-color: #9162FA; 
-    color: #ffffff; 
-    text-decoration: none;
-    padding: 10px 20px; 
-    border: none; 
-    border-radius: 5px; 
-    margin-bottom: 20px; 
-  }
-  
-  .transaksi + hr {
-    border: 1px solid #864AFA;
-    margin-top: 0;
+.link {
+  position: relative;
+  @apply relative font-bold px-3 py-2 mx-3;
+  color: black; /* Warna teks default */
+  transition: color 0.3s ease; /* Transisi warna teks */
+}
+
+.link:hover {
+  color: #811ef1;
+}
+
+.link::after {
+  @apply block absolute bottom-0 left-0 w-0 h-2 bg-white;
+  content: "";
+  transition: width 0.3s ease;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #811ef1;
+}
+
+.link:hover::after {
+  width: 100%; 
+}
 
 
-  }
-  .table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .table th,
-  .table td {
-    padding: 8px 16px;
-    border-bottom: 1px solid #864AFA;
-  }
-  
-  .table th {
-    text-align: left;
-  }
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  .selesai {
-    background-color: #9162FA;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+.header-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 20px; 
+  font-family: 'Poppins', sans-serif;
+}
 
-  .selesai:hover {
-    background-color: #45a049;
-  }
-  
+.TambahTransaksi {
+  background-color: #9162FA; 
+  color: #ffffff; 
+  text-decoration: none;
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px; 
+}
+
+.TambahTransaksi:hover{
+  background-color: #0e5b5e;
+}
+
+.transaksi + hr {
+  border: 1px solid #864AFA;
+  margin-top: 0;
+
+
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Poppins', sans-serif;
+}
+
+.table th,
+.table td {
+  padding: 8px 16px;
+  border-bottom: 1px solid #864AFA;
+}
+
+.table th {
+  text-align: left;
+}
+
+.tombol {
+  background-color: #864AFA; 
+  color: #ffffff;
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tombol:hover{
+  background-color: #210268;
+}

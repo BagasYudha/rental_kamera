@@ -25,29 +25,29 @@ class AdminController extends Controller
             'username.required' => 'ID Admin wajib diisi.',
             'password.required' => 'Password wajib diisi.'
         ]);
-    
+
         // Mengambil admin berdasarkan username
         $admin = Admin::where('username', $validated['username'])->first();
-    
+
         // Memeriksa apakah admin ada dan password benar
         if (!$admin || !Hash::check($validated['password'], $admin->password)) {
             return back()->withErrors([
                 'credentials' => 'ID ADMIN atau PASSWORD salah '
             ])->withInput($request->only('username')); // Tetapkan nilai input username
         }
-    
+
         // Mengasumsikan autentikasi berbasis sesi atau token telah diatur
         // Auth::login($admin);
-    
+
         // Mengarahkan ke dasbor admin setelah login berhasil
-        return redirect()->route('admin.dashboard');
+        return redirect()->route('admin.Transaksi');
     }
-    
+
 
     /**
      * Menampilkan dasbor admin.
      *
      * @return \Illuminate\Contracts\View\View
      */
-   
+
 }

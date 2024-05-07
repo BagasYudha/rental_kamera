@@ -12,7 +12,7 @@ class Admin extends Model
     protected $table = 'tb_admin'; // Nama tabel di database
 
     protected $fillable = [
-        'username', 'password' // Kolom yang dapat diisi
+        'username', 'password' , 'token'// Kolom yang dapat diisi
     ];
 
     // Anda bisa menambahkan relasi atau fungsi lainnya di sini

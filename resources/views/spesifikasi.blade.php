@@ -5,16 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spesifikasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="spesifikasi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
+<body class="navbar"> 
+    <nav class="px-[20px] font-['Poppins'] justify-between items-center flex w-full h-20 bg-[#e8fffb67] backdrop-blur-sm border-b-[1px] border-white">
+    <div class="justify-start w-56 h-full bg-cover bg-center" style="background-image: url('Media/Logo-hitam.png')">
+    </div>
+    <div class="flex justify-end w-full h-full items-center font-sans">
+        <a href="/" class="link font-bold px-3 py-2 mx-3">Beranda</a>
+        <a href="/rental" class="link font-bold px-3 py-2 mx-3">Rental</a>
+        <a href="/spesifikasi" class="link font-bold px-3 py-2 mx-3">Spesifikasi</a>
+        <a href="/#Contact" class="link font-bold px-3 py-2 mx-3">Hubungi Kami</a>
+    </div>
+</nav>
+</body>
 <body>
-    <header>
-        <div class="logo">
-            <img src="./Media/Logo-hitam.png" alt="CaryCam">
-        </div>
-    </header>
     <main>
         <div class="container">
             <div class="left">
@@ -23,8 +32,13 @@
                 <div class="harga">Tersedia : 6<br>
                     Harga: Rp. 50.000/Hari</div>
                 <div class="logo-whatsapp">
-                    <a href="https://wa.me/6281331571129" class="whatsapp-link" target="_blank">
+<<<<<<< HEAD
+                    <a href="https://wa.me/628571129" class="whatsapp-link" target="_blank">
                         <img src="./Media/Icon/Instagram.png" alt="WhatsApp"><span class="whatsapp-text">Booking</span>
+=======
+                    <a href="https://wa.me/6281331571129" class="whatsapp-link" target="_blank">
+                        <img src="./Media/Icon/Whatsapp.png" alt="WhatsApp"><span class="whatsapp-text">Booking</span>
+>>>>>>> 356f3fad42eedd8c0b54c066bf60735f7ad2e7f7
                     </a>
                 </div>
             </div>

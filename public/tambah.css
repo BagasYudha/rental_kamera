@@ -2,74 +2,73 @@
   width: 80%;
   margin: 50px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px #b4b4b4; 
 }
 
 h2 {
-  text-align: center;
+  color: #000cb8; 
+  margin-bottom: 60px; 
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
-.grup-nama {
-  margin-bottom: 20px;
+body {
+  background-color: #e8fffbcc;
+}
+
+.form-group {
+  width: 97%;
+  margin-bottom: 30px; 
   display: flex;
+  flex-wrap: wrap; /* Mengizinkan wrapping pada item */
 }
 
 .left,
 .right {
-  flex: 1;
+  width: 100%; 
+  margin-bottom: 5px; /* Atur jarak antara elemen-elemen */
 }
 
-.left label,
-.right label {
+.form-group label {
+  width: 100%; /* Set label menjadi 100% lebar */
   font-weight: bold;
+  color: #000000b2; 
+  margin-bottom: 5px; 
+  font-family: 'Poppins', sans-serif;
 }
 
-.left input[type="text"],
-.right input[type="text"] {
-  width: 90%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="time"] {
+  width: 100%; /* Set input menjadi 100% lebar */
+  padding: 12px; 
+  margin-top: 1px;
   border-radius: 5px;
+  border: 1px solid #984bd8;
+  margin-bottom: 5px; /* Atur jarak antara elemen-elemen */
 }
 
-.grup-waktu {
+
+.button-container {
+  width: 100%; 
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center; 
+  margin-top: 30px; 
 }
-
-.Input-Time {
-  margin-right: 100px;
-}
-
-.radio-group {
-  display: inline;
-  align-items: center;
-}
-
-.radio-group label {
-  margin-right: 10px;
-}
-
-.radio-group input[type="radio"] {
-  margin-right: 5px;
-}
-
-
 
 button {
-  display: block;
-  width: 10%;
-  padding: 10px;
-  background-color: #007bff;
+  padding: 10px 20px; 
+  background-color: #984bd8;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.9s;
+  font-family: 'Poppins', sans-serif;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #300242; 
 }
