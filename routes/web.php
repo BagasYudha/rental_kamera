@@ -2,12 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController; // Import the AdminController
-<<<<<<< HEAD
+
 use App\Http\Controllers\Auth\ForgotPassword;
-=======
+
 use App\Http\Controllers\TransaksiController;
 
->>>>>>> 356f3fad42eedd8c0b54c066bf60735f7ad2e7f7
 
 Route::get('/', function () {
     return view('index');
@@ -15,7 +14,7 @@ Route::get('/', function () {
 
 Route::get('/adminlog', function () {
     return view('AdminLogin');
-<<<<<<< HEAD
+
 })->name('admin.loginview');
 
 Route::get('/forgot-password', function () {
@@ -26,10 +25,8 @@ Route::get('reset-password', [ForgotPassword::class, 'resetPassword'])->name('au
 Route::post('reset-password', [ForgotPassword::class, 'resetPassworProcess'])->name('auth.reset-password.send');
 
 Route::post('/forgot-password',[ForgotPassword::class,"index"])->name('auth.forgot-password.send');
-=======
 
-});
->>>>>>> 356f3fad42eedd8c0b54c066bf60735f7ad2e7f7
+
 
 Route::post('/admin/login', [AdminController::class, 'login'])->name('admin.login'); // Fix the route action for admin login process
 

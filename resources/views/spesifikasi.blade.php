@@ -11,17 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body class="navbar"> 
-    <nav class="px-[20px] font-['Poppins'] justify-between items-center flex w-full h-20 bg-[#e8fffb67] backdrop-blur-sm border-b-[1px] border-white">
-    <div class="justify-start w-56 h-full bg-cover bg-center" style="background-image: url('Media/Logo-hitam.png')">
+<body>
+     <!-- NAVBAR -->
+     <div class="fixed w-full z-20">
+        @include('navbar')
     </div>
-    <div class="flex justify-end w-full h-full items-center font-sans">
-        <a href="/" class="link font-bold px-3 py-2 mx-3">Beranda</a>
-        <a href="/rental" class="link font-bold px-3 py-2 mx-3">Rental</a>
-        <a href="/spesifikasi" class="link font-bold px-3 py-2 mx-3">Spesifikasi</a>
-        <a href="/#Contact" class="link font-bold px-3 py-2 mx-3">Hubungi Kami</a>
-    </div>
-</nav>
+    <!-- NAVBAR END -->
 </body>
 <body>
     <main>
