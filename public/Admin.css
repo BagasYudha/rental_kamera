@@ -2,26 +2,26 @@ body {
     margin: 0;
     line-height: normal;
   }
-  
+
   :root {
     /* fonts */
     --font-poppins: Poppins;
-  
+
     /* font sizes */
     --font-size-3xl: 22px;
     --font-size-xl: 20px;
-  
+
     /* Colors */
     --color-lightcyan: #e8fffb;
     --color-black: #000;
     --color-white: #fff;
     --color-mediumslateblue: #9162fa;
     --color-gray: rgba(255, 255, 255, 0);
-  
+
     /* Border radiuses */
     --br-3xs: 10px;
   }
-  
+
 .aksi,
 .harga-sewahari,
 .kategori,
@@ -620,7 +620,7 @@ body {
 }
 .logo-icon {
   top: 26px;
-  left: 20px;
+  left: 100px;
   width: 321px;
   height: 83px;
   object-fit: cover;

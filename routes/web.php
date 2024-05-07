@@ -11,6 +11,7 @@ Route::get('/', function () {
 
 Route::get('/adminlog', function () {
     return view('AdminLogin');
+
 });
 
 Route::post('/admin/login', [AdminController::class, 'login'])->name('admin.login'); // Fix the route action for admin login process
@@ -42,3 +43,10 @@ Route::get('/create', [TransaksiController::class, 'create'])->name('transaksi.c
 Route::get('/Transaksi', [TransaksiController::class, 'index'])->name('transaksi.index');
 Route::delete('/Transaksi/{id}', [TransaksiController::class, 'destroy'])->name('transaksi.destroy');
 Route::post('/Transaksi', [TransaksiController::class, 'store'])->name('transaksi.store');
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+//route resource for products
+Route::resource('/products', \App\Http\Controllers\ProductController::class);
