@@ -13,7 +13,7 @@
 
     <script src="https://unpkg.com/feather-icons"></script>
 
-    @vite('resources/css/app.css')
+    {{-- @vite('resources/css/app.css') --}}
 
 </head>
 
