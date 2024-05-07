@@ -5,16 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spesifikasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="spesifikasi.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
+<body class="navbar"> 
+    <nav class="px-[20px] font-['Poppins'] justify-between items-center flex w-full h-20 bg-[#e8fffb67] backdrop-blur-sm border-b-[1px] border-white">
+    <div class="justify-start w-56 h-full bg-cover bg-center" style="background-image: url('Media/Logo-hitam.png')">
+    </div>
+    <div class="flex justify-end w-full h-full items-center font-sans">
+        <a href="/" class="link font-bold px-3 py-2 mx-3">Beranda</a>
+        <a href="/rental" class="link font-bold px-3 py-2 mx-3">Rental</a>
+        <a href="/spesifikasi" class="link font-bold px-3 py-2 mx-3">Spesifikasi</a>
+        <a href="/#Contact" class="link font-bold px-3 py-2 mx-3">Hubungi Kami</a>
+    </div>
+</nav>
+</body>
 <body>
-    <header>
-        <div class="logo">
-            <img src="./Media/Logo-hitam.png" alt="CaryCam">
-        </div>
-    </header>
     <main>
         <div class="container">
             <div class="left">

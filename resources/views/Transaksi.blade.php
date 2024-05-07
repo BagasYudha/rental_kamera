@@ -9,29 +9,29 @@
 </head>
 <body>
 
-      <div class="container">
+    <div class="container">
 
         <div class="header-container">
             <h1>Transaksi</h1>
             <a href="{{ route('transaksi.create') }}" class="TambahTransaksi">Tambah Transaksi</a>
-          </div>
-          <hr>
-          
+        </div>
+        <hr>
+        
     <table class="table">
-      <thead>
+    <thead>
         <tr>
-          <th scope="col">No</th>
-          <th scope="col">Nama Peminjam</th>
-          <th scope="col">Jaminan</th>
-          <th scope="col">Nama Barang</th>
-          <th scope="col">Jam Ambil</th>
-          <th scope="col">Tanggal Ambil</th>
-          <th scope="col">Tanggal Kembali</th>
-          <th scope="col"></th>
-          <th scope="col">Aksi</th>
+        <th scope="col">No</th>
+        <th scope="col">Nama Peminjam</th>
+        <th scope="col">Jaminan</th>
+        <th scope="col">Nama Barang</th>
+        <th scope="col">Jam Ambil</th>
+        <th scope="col">Tanggal Ambil</th>
+        <th scope="col">Tanggal Kembali</th>
+        <th scope="col"></th>
+        <th scope="col">Aksi</th>
         </tr>
-      </thead>
-      <tbody>
+    </thead>
+    <tbody>
     @foreach ($transaksis as $transaksi)
     <tr>
         <td>{{ $loop->iteration }}</td>
