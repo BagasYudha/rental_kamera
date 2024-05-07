@@ -13,6 +13,25 @@
 
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <style>
+        .link-item {
+    transform-origin: 50% 50%;
+    width: 190px;
+    height: 230px;
+    padding: 0px 16px 0px 16px;
+    border-radius: 16px;
+    border-width: 2px;
+    border-color: #e4f6ff;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.link-item:hover {
+    scale: 1.05;
+    border-color: #8152fb;
+}
+    </style>
+
 </head>
 
 <body class="bg-[#E8FFFB] font-['Poppins'] w-full overflow-x-hidden">
