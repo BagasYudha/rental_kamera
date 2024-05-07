@@ -19,7 +19,7 @@
                 </div>
                 <div class="right">
                     <label for="jamAmbil">Jam Ambil</label>
-                    <input type="text" id="jamAmbil" name="jamAmbil" required>
+                    <input type="time" id="jamAmbil" name="jamAmbil" required>
                 </div>
             </div>
             <div class="form-group">
