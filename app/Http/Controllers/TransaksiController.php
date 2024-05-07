@@ -49,7 +49,7 @@ class TransaksiController extends Controller
         $transaksi->tglKembali = $request->tglKembali;
         $transaksi->save();
 
-        return redirect()->route('transaksi.index')->with('success', 'Transaksi berhasil ditambahkan.');
+        return redirect()->route('transaksi.index');
 
     }
 
@@ -86,6 +86,6 @@ class TransaksiController extends Controller
     
     $transaksi->delete();
     
-    return redirect()->route('transaksi.index')->with('success', 'Transaksi berhasil dihapus.');
+    return redirect()->route('transaksi.index');
     }
 }

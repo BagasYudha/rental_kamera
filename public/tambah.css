@@ -2,7 +2,7 @@
   width: 80%;
   margin: 50px auto;
   padding: 20px;
-  background-color: #e8fffba1;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 20px #b4b4b4; 
 }
@@ -16,7 +16,8 @@ h2 {
 
 
 body {
-  background-color: #ebe9e9; 
+  background-color: #e8fffbcc;
+; 
 }
 
 .form-group {
@@ -27,7 +28,7 @@ body {
 }
 
 .left {
-  width: 50%; /* kolom nama penyewa */
+  width: 50%; /* kolom nama penyewa, nama barang dan jaminan */
   display: flex;
   align-items: center;
 }
@@ -42,7 +43,7 @@ body {
 .form-group label {
   width: 30%; 
   font-weight: bold;
-  color: #000000; 
+  color: #000000b2; 
   margin-left: 25px;
   font-family: 'Poppins', sans-serif;
 }

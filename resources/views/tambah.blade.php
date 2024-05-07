@@ -29,17 +29,22 @@
                 </div>
                 <div class="right">
                     <label for="tglAmbil">Tanggal Ambil</label>
-                    <input type="text" id="tglAmbil" name="tglAmbil" required>
+                    <input type="date" id="tglAmbil" name="tglAmbil" required>
                 </div>
             </div>
             <div class="form-group">
                 <div class="left">
-                    <label for="jaminan">Jaminan</label>
-                    <input type="text" id="jaminan" name="jaminan" required>
+                    <<label for="jaminan"> Jaminan : </label><br>
+                    <input type="radio" id="ktp" name="jaminan" value="KTP" required>
+                    <label for="ktp">KTP</label><br>
+                    <input type="radio" id="sim" name="jaminan" value="SIM">
+                    <label for="sim">SIM</label><br>
+                    <input type="radio" id="kta" name="jaminan" value="KTA">
+                    <label for="kta">KTA</label><br>
                 </div>
                 <div class="right">
                     <label for="tglKembali">Tanggal Kembali</label>
-                    <input type="text" id="tglKembali" name="tglKembali" required>
+                    <input type="date" id="tglKembali" name="tglKembali" required>
                 </div>
             </div>
             <div class="button-container">
