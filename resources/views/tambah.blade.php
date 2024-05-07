@@ -34,7 +34,7 @@
             </div>
             <div class="form-group">
                 <div class="left">
-                    <<label for="jaminan"> Jaminan : </label><br>
+                    <label for="jaminan"> Jaminan : </label><br>
                     <input type="radio" id="ktp" name="jaminan" value="KTP" required>
                     <label for="ktp">KTP</label><br>
                     <input type="radio" id="sim" name="jaminan" value="SIM">

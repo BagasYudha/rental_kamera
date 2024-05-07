@@ -14,47 +14,42 @@ h2 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
-
 body {
   background-color: #e8fffbcc;
-; 
 }
 
 .form-group {
-  width: 100%;
+  width: 97%;
   margin-bottom: 30px; 
   display: flex;
-  align-items: center;
+  flex-wrap: wrap; /* Mengizinkan wrapping pada item */
 }
 
-.left {
-  width: 50%; /* kolom nama penyewa, nama barang dan jaminan */
-  display: flex;
-  align-items: center;
-}
-
+.left,
 .right {
-  width: 50%; /* kolom jam ambil, tanggal ambil, dan tanggal kembali */
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  width: 100%; 
+  margin-bottom: 5px; /* Atur jarak antara elemen-elemen */
 }
 
 .form-group label {
-  width: 30%; 
+  width: 100%; /* Set label menjadi 100% lebar */
   font-weight: bold;
   color: #000000b2; 
-  margin-left: 25px;
+  margin-bottom: 5px; 
   font-family: 'Poppins', sans-serif;
 }
 
-.form-group input[type="text"] {
-  flex: 1; 
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="time"] {
+  width: 100%; /* Set input menjadi 100% lebar */
   padding: 12px; 
-  margin-top: 5px;
+  margin-top: 1px;
   border-radius: 5px;
-  border: 1px solid #984bd8
+  border: 1px solid #984bd8;
+  margin-bottom: 5px; /* Atur jarak antara elemen-elemen */
 }
+
 
 .button-container {
   width: 100%; 
@@ -64,8 +59,7 @@ body {
 }
 
 button {
-  width: 30%; 
-  padding: 10px;
+  padding: 10px 20px; 
   background-color: #984bd8;
   color: #fff;
   border: none;

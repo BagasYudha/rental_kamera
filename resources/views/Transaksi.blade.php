@@ -6,9 +6,18 @@
     <title>Transaksi</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="Transaksi.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
-
+    <nav class="px-[20px] font-['Poppins'] justify-between items-center flex w-full h-20 bg-[#e8fffb67] backdrop-blur-sm border-b-[1px] border-white">
+        <div class="justify-start w-56 h-full bg-cover bg-center" style="background-image: url('Media/Logo-hitam.png')">
+        </div>
+        <div class="flex justify-end w-full h-full items-center font-sans">
+            <a href="/" class="link font-bold px-3 py-2 mx-3">Dashboard</a>
+            <a href="/Transaksi" class="link font-bold px-3 py-2 mx-3">Transaksi</a>
+        </div>
+    </nav>
     <div class="container">
 
         <div class="header-container">
