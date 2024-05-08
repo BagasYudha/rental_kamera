@@ -4,6 +4,7 @@
     --soft-blue: #33baff;
 }
 
+/* hover nav */
 @keyframes slideUnderline {
     0% {
         width: 0;
@@ -16,6 +17,7 @@
 }
 
 .link {
+    scroll-behavior: smooth;
     position: relative;
     @apply relative font-bold px-3 py-2 mx-3;
     color: black; /* Warna teks default */
@@ -42,3 +44,23 @@
 .link:hover::after {
     width: 100%;
 }
+/* hover nav end*/
+
+/* hover item */
+.link-item {
+    transform-origin: 50% 50%;
+    width: 190px;
+    height: 230px;
+    padding: 0px 16px 0px 16px;
+    border-radius: 16px;
+    border-width: 2px;
+    border-color: #e4f6ff;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.link-item:hover {
+    scale: 1.05;
+    border-color: #8152fb;
+}
+/* hover item end*/

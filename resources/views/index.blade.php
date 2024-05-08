@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,6 @@
 
     <script src="https://unpkg.com/feather-icons"></script>
 
-    @vite('resources/css/app.css')
 
 </head>
 
