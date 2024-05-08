@@ -40,12 +40,7 @@ class AdminController extends Controller
         // Auth::login($admin);
 
         // Mengarahkan ke dasbor admin setelah login berhasil
-<<<<<<< HEAD
         return redirect()->route('admin.Transaksi');
-=======
-        return redirect()->route('admin.dashboard');
-
->>>>>>> 356f3fad42eedd8c0b54c066bf60735f7ad2e7f7
     }
 
 
