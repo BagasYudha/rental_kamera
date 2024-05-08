@@ -58,9 +58,11 @@ Route::get('/Transaksi', [TransaksiController::class, 'index'])->name('transaksi
 Route::delete('/Transaksi/{id}', [TransaksiController::class, 'destroy'])->name('transaksi.destroy');
 Route::post('/Transaksi', [TransaksiController::class, 'store'])->name('transaksi.store');
 
-Route::get('/', function () {
+Route::get('/navbar', function () {
     return view('welcome');
 });
+
+
 
 //route resource for products
 Route::resource('/products', \App\Http\Controllers\ProductController::class);
