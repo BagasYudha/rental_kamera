@@ -33,7 +33,7 @@
 
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">NAMA PRODUK</label>
-                                <input type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title', $product->title) }}" placeholder="Masukkan Nama Produk">
+                                <input type="text" class="form-control @error('nama_item') is-invalid @enderror" name="nama_item" value="{{ old('nama_item', $product->nama_item) }}" placeholder="Masukkan Nama Produk">
 
                                 <!-- error message untuk title -->
                                 @error('title')

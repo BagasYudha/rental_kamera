@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama', 100);
             $table->string('jaminan', 100);
-            $table->string('namabarang', 100);
+            $table->string('nama_item', 100);
             $table->string('jamAmbil', 100);
             $table->string('tglAmbil', 100);
             $table->string('tglKembali', 100);

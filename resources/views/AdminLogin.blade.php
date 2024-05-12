@@ -51,13 +51,13 @@
         </div>
     </div>
 
-    @if ($errors->any())
+    <!-- @if ($errors->any())
     <script>
-        @foreach($errors - > all() as $error)
+        @foreach($errors->all() as $error)
         alert('{{ $error }}');
         @endforeach
     </script>
-    @endif
+    @endif -->
 
 
 
