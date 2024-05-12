@@ -15,7 +15,8 @@ class Admin extends Seeder
     {
         DB::table('tb_admin')->insert([
             'username' => 'admin',
-            'password' => bcrypt('password123')
+            'password' => bcrypt('password123'),
+            'email' => 'mrxnexsus@gmail.com' // Ganti dengan email yang valid
         ]);
     }
 }
