@@ -52,7 +52,7 @@ class ProductController extends Controller
         // Validasi form
         $request->validate([
             'image'         => 'required|image|mimes:jpeg,jpg,png|max:2048',
-            'title'         => 'required|min:5',
+            'nama_item'         => 'required|min:5',
             'description'   => 'required|min:10',
             'price'         => 'required|numeric',
             'stock'         => 'required|numeric'
@@ -65,7 +65,7 @@ class ProductController extends Controller
         // Buat produk
         Product::create([
             'image'         => $image->hashName(),
-            'title'         => $request->title,
+            'nama_item'     => $request->nama_item,
             'description'   => $request->description,
             'price'         => $request->price,
             'stock'         => $request->stock
@@ -117,7 +117,7 @@ class ProductController extends Controller
         // Validasi form
         $request->validate([
             'image'         => 'image|mimes:jpeg,jpg,png|max:2048',
-            'title'         => 'required|min:5',
+            'nama_item'         => 'required|min:5',
             'description'   => 'required|min:10',
             'price'         => 'required|numeric',
             'stock'         => 'required|numeric'
@@ -139,7 +139,7 @@ class ProductController extends Controller
             // Perbarui produk dengan gambar baru
             $product->update([
                 'image'         => $image->hashName(),
-                'title'         => $request->title,
+                'nama_item'         => $request->nama_item,
                 'description'   => $request->description,
                 'price'         => $request->price,
                 'stock'         => $request->stock
@@ -149,7 +149,7 @@ class ProductController extends Controller
 
             // Perbarui produk tanpa gambar
             $product->update([
-                'title'         => $request->title,
+                'nama_item'         => $request->nama_item,
                 'description'   => $request->description,
                 'price'         => $request->price,
                 'stock'         => $request->stock
