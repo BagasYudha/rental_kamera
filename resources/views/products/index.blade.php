@@ -27,7 +27,7 @@
             <div class="col-md-12">
                 <div>
                     <!-- <h3 class="text-center my-4">Edit Barang</h3> -->
-                    <a href="{{ route('products.create') }}" class="btn btn-md" style="background-color: mediumslateblue; color: white; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); position: absolute; right: 140px;">Tambah Produk</a>
+                    <a href="{{ route('products.create') }}" class="fixed btn btn-md" style="background-color: mediumslateblue; color: white; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); position: absolute; right: 140px;">Tambah Produk</a>
                     <br><br>
                     <hr>
                 </div>
@@ -48,7 +48,7 @@
                                 @forelse ($products as $product)
                                 <tr>
                                     <td class="text-center">
-                                        <img src="{{ asset('/storage/products/'.$product->image) }}" class="rounded" style="width: 150px">
+                                        <img src="{{ asset('/storage/products/' . $product->image) }}" alt="{{ $product->nama_item }}" class="rounded" style="width: 150px">
                                     </td>
                                     <td>{{ $product->nama_item }}</td>
                                     <td>{{ "Rp " . number_format($product->price,2,',','.') }}</td>
