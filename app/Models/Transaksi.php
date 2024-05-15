@@ -11,7 +11,6 @@ class Transaksi extends Model
     protected $table = "transaksis";
     protected $primaryKey = "id";
     protected $fillsble = [
-        'id','nama','jaminan','namabarang','jamAmbil','tglAmbil','tglKembali'
+        'id', 'nama', 'jaminan', 'nama_item', 'jamAmbil', 'tglAmbil', 'tglKembali'
     ];
-
 }

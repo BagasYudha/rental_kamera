@@ -24,8 +24,8 @@
             </div>
             <div class="form-group">
                 <div class="left">
-                    <label for="namabarang">Nama Barang</label>
-                    <input type="text" id="namabarang" name="namabarang" required>
+                    <label for="nama_item">Nama Barang</label>
+                    <input type="text" id="nama_item" name="nama_item" required>
                 </div>
                 <div class="right">
                     <label for="tglAmbil">Tanggal Ambil</label>

@@ -22,9 +22,15 @@
     </div>
     <!-- NAVBAR END -->
 
-    <div class="container ">
+    <div class="container mt-16">
         <div class="row mt-32">
             <div class="col-md-12">
+                <div>
+                    <!-- <h3 class="text-center my-4">Edit Barang</h3> -->
+                    <a href="{{ route('products.create') }}" class="fixed btn btn-md" style="background-color: mediumslateblue; color: white; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); position: absolute; right: 140px;">Tambah Produk</a>
+                    <br><br>
+                    <hr>
+                </div>
                 <div class="card border-0 shadow-sm rounded">
                     <div class="card-body">
                         <table class="table table-bordered">
@@ -42,9 +48,9 @@
                                 @forelse ($products as $product)
                                 <tr>
                                     <td class="text-center">
-                                        <img src="{{ asset('/storage/products/'.$product->image) }}" class="rounded" style="width: 150px">
+                                        <img src="{{ asset('/storage/products/' . $product->image) }}" alt="{{ $product->nama_item }}" class="rounded" style="width: 150px">
                                     </td>
-                                    <td>{{ $product->title }}</td>
+                                    <td>{{ $product->nama_item }}</td>
                                     <td>{{ "Rp " . number_format($product->price,2,',','.') }}</td>
                                     <td>{{ $product->stock }}</td>
                                     <td class="text-center">
@@ -79,7 +85,7 @@
         if (session('success'))
             Swal.fire({
                 icon: "success",
-                title: "BERHASIL",
+                nama_item: "BERHASIL",
                 text: "{{ session('success') }}",
                 showConfirmButton: false,
                 timer: 2000
@@ -87,7 +93,7 @@
         elseif(session('error'))
         Swal.fire({
             icon: "error",
-            title: "GAGAL!",
+            nama_item: "GAGAL!",
             text: "{{ session('error') }}",
             showConfirmButton: false,
             timer: 2000

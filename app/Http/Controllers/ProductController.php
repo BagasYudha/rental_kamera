@@ -22,7 +22,7 @@ class ProductController extends Controller
      *
      * @return void
      */
-    public function index() : View
+    public function index(): View
     {
         // Dapatkan semua produk
         $products = Product::latest()->paginate(10);
@@ -60,7 +60,7 @@ class ProductController extends Controller
 
         // Unggah gambar
         $image = $request->file('image');
-        $image->storeAs('public/products', $image->hashName());
+        $image->storeAs('public/products/', $image->hashName());
 
         // Buat produk
         Product::create([
@@ -131,10 +131,10 @@ class ProductController extends Controller
 
             // Unggah gambar baru
             $image = $request->file('image');
-            $image->storeAs('public/products', $image->hashName());
+            $image->storeAs('public/products/', $image->hashName());
 
             // Hapus gambar lama
-            Storage::delete('public/products/'.$product->image);
+            Storage::delete('public/products/' . $product->image);
 
             // Perbarui produk dengan gambar baru
             $product->update([
@@ -144,7 +144,6 @@ class ProductController extends Controller
                 'price'         => $request->price,
                 'stock'         => $request->stock
             ]);
-
         } else {
 
             // Perbarui produk tanpa gambar
@@ -172,7 +171,7 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
 
         // Hapus gambar
-        Storage::delete('public/products/'. $product->image);
+        Storage::delete('public/products/' . $product->image);
 
         // Hapus produk
         $product->delete();
