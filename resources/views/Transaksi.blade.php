@@ -10,14 +10,7 @@
 
 </head>
 <body>
-    <nav class="px-[20px] font-['Poppins'] justify-between items-center flex w-full h-20 bg-[#e8fffb67] backdrop-blur-sm border-b-[1px] border-white">
-        <div class="justify-start w-56 h-full bg-cover bg-center" style="background-image: url('Media/Logo-hitam.png')">
-        </div>
-        <div class="flex justify-end w-full h-full items-center font-sans">
-            <a href="/" class="link font-bold px-3 py-2 mx-3">Dashboard</a>
-            <a href="/Transaksi" class="link font-bold px-3 py-2 mx-3">Transaksi</a>
-        </div>
-    </nav>
+
     <div class="container">
 
         <div class="header-container">
@@ -46,13 +39,13 @@
         <td>{{ $loop->iteration }}</td>
         <td>{{ $transaksi->nama }}</td>
         <td>{{ $transaksi->jaminan }}</td>
-        <td>{{ $transaksi->namabarang }}</td>
+        <td>{{ $transaksi->namaitem }}</td>
         <td>{{ $transaksi->jamAmbil }}</td>
         <td>{{ $transaksi->tglAmbil }}</td>
         <td>{{ $transaksi->tglKembali }}</td>
         <td>{{ $transaksi->aksi }}</td>
         <td class="text-center">
-            <form action="{{ route('transaksi.destroy', $transaksi->id) }}" method="POST">
+            <form action="{{ route('transaksi.destroy', $transaksi->id_transaksi) }}" method="POST">
                 @csrf
                 @method('DELETE')
                 <button type="submit" class="tombol">Selesai</button>

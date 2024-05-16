@@ -24,12 +24,16 @@ Route::post('/forgot-password', [ForgotPassword::class, "index"])->name('auth.fo
 
 Route::post('/admin/login', [AdminController::class, 'login'])->name('admin.login'); // Fix the route action for admin login process
 
-Route::get('/admin/Transaksi', function () {
-    return view('Transaksi');
-})->name('admin.Transaksi');
+Route::get('/admin/products', function () {
+    return view('products.index');
+})->name('products.index');
 
 Route::get('/navbar', function () {
     return view('navbar');
+});
+
+Route::get('/navbarAdmin', function () {
+    return view('products.navbarAdmin');
 });
 
 Route::get('/spesifikasi', function () {
@@ -41,15 +45,12 @@ Route::get('/rental', function () {
 });
 
 
-Route::get('/Transaksi', [TransaksiController::class, 'index']);
+// Route::get('/Transaksi', [TransaksiController::class, 'index']);
 Route::get('/create', [TransaksiController::class, 'create'])->name('transaksi.create');
 Route::get('/Transaksi', [TransaksiController::class, 'index'])->name('transaksi.index');
 Route::delete('/Transaksi/{id}', [TransaksiController::class, 'destroy'])->name('transaksi.destroy');
 Route::post('/Transaksi', [TransaksiController::class, 'store'])->name('transaksi.store');
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 //route resource for products
 Route::resource('/products', \App\Http\Controllers\ProductController::class);

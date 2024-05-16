@@ -44,9 +44,9 @@
                                         <td>{{ "Rp " . number_format($product->price,2,',','.') }}</td>
                                         <td>{{ $product->stock }}</td>
                                         <td class="text-center">
-                                            <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('products.destroy', $product->id) }}" method="POST">
-                                                <a href="{{ route('products.show', $product->id) }}" class="btn btn-sm" style="background-color: lightcyan; color: black; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">SHOW</a>
-                                                <a href="{{ route('products.edit', $product->id) }}" class="btn btn-sm" style="background-color: lightcyan; color: black; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">EDIT</a>
+                                            <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('products.destroy', $product->id_products) }}" method="POST">
+                                                <a href="{{ route('products.show', $product->id_products) }}" class="btn btn-sm" style="background-color: lightcyan; color: black; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">SHOW</a>
+                                                <a href="{{ route('products.edit', $product->id_products) }}" class="btn btn-sm" style="background-color: lightcyan; color: black; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">EDIT</a>
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="btn btn-sm btn-danger" style="box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">HAPUS</button>
