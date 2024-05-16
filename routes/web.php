@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\ForgotPassword;
 use App\Http\Controllers\TransaksiController;
-use App\Http\Controllers\TransaksiController;
-use App\Http\Controllers\Auth\ForgotPassword;
+use App\Http\Controllers\AdminController;
+
 
 Route::get('/', function () {
     return view('index');
