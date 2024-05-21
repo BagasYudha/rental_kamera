@@ -21,10 +21,7 @@
             <a href="/products" class="link font-bold px-3 py-2 mx-3">Dashboard</a>
             <a href="/Transaksi" class="link font-bold px-3 py-2 mx-3">Transaksi</a>
         </div>
-
     </nav>
-
-
 </body>
 
 </html>

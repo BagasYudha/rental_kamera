@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController; // Import the AdminController
 use App\Http\Controllers\Auth\ForgotPassword;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TransaksiController;
 
 Route::get('/', function () {
@@ -40,9 +41,11 @@ Route::get('/spesifikasi', function () {
     return view('spesifikasi');
 });
 
-Route::get('/rental', function () {
-    return view('rental');
-});
+// Route::get('/rental', function () {
+//     return view('rental');
+// });
+
+Route::get('/rental', [ProductController::class, 'rentalProduk']);
 
 
 // Route::get('/Transaksi', [TransaksiController::class, 'index']);

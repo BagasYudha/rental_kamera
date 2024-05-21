@@ -31,6 +31,12 @@ class ProductController extends Controller
         return view('products.index', compact('products'));
     }
 
+    public function rentalProduk()
+    {
+        $products = Product::all();
+        return view('rental', compact('products'));
+    }
+
     /**
      * create
      *
