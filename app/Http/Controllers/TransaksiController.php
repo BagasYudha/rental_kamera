@@ -2,53 +2,45 @@
 
 namespace App\Http\Controllers;
 
-
 use App\Models\Transaksi;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class TransaksiController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        $transaksis = transaksi::latest()->paginate(10);
+        $transaksis = Transaksi::latest()->paginate(10);
         return view('Transaksi')->with('transaksis', $transaksis);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
-        return view('tambah');
+        $barang = Product::all();
+        return view('tambah', compact('barang'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
         $request->validate([
             'nama' => 'required|max:100',
             'jaminan' => 'required|max:100',
-            'nama_item' => 'required|max:100',
+            'nama_item' => 'required|exists:products,nama_item',
             'jamAmbil' => 'required|max:100',
-            'tglAmbil' => 'required|max:100',
-            'tglKembali' => 'required|max:100',
+            'tglAmbil' => 'required|date',
+            'tglKembali' => 'required|date',
         ]);
 
-        $transaksi = new Transaksi();
-        $transaksi->nama = $request->nama;
-        $transaksi->jaminan = $request->jaminan;
-        $transaksi->nama_item = $request->nama_item;
-        $transaksi->jamAmbil = $request->jamAmbil;
-        $transaksi->tglAmbil = $request->tglAmbil;
-        $transaksi->tglKembali = $request->tglKembali;
-        $transaksi->save();
+        Transaksi::create([
+            'nama' => $request->nama,
+            'jaminan' => $request->jaminan,
+            'nama_item' => $request->nama_item,
+            'jamAmbil' => $request->jamAmbil,
+            'tglAmbil' => $request->tglAmbil,
+            'tglKembali' => $request->tglKembali,
+        ]);
 
-        return redirect()->route('transaksi.index');
+        return redirect()->route('transaksi.index')->with('success', 'Transaksi berhasil ditambahkan');
     }
 
     /**
@@ -78,12 +70,10 @@ class TransaksiController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($id)
     {
         $transaksi = Transaksi::findOrFail($id);
-
         $transaksi->delete();
-
-        return redirect()->route('transaksi.index');
+        return redirect()->route('transaksi.index')->with('success', 'Transaksi berhasil dihapus');
     }
 }

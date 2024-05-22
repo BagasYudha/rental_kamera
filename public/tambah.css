@@ -22,13 +22,43 @@ body {
   width: 97%;
   margin-bottom: 30px; 
   display: flex;
-  flex-wrap: wrap; /* Mengizinkan wrapping pada item */
+  flex-wrap: wrap; 
 }
 
 .left,
 .right {
   width: 100%; 
-  margin-bottom: 5px; /* Atur jarak antara elemen-elemen */
+  margin-bottom: 5px; 
+}
+
+.kotak-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+select.kotak-input {
+  width: 100%; 
+  padding: 10px; 
+  font-size: 16px; 
+  border: 1px solid #984bd8;
+  border-radius: 5px; 
+  background-color: #f9f9f9;
+  color: #333; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  appearance: none; 
+  cursor: pointer; 
+}
+
+.kotak-input:focus {
+  border-color: #666; 
+  outline: none; 
 }
 
 .form-group label {
