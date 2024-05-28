@@ -10,8 +10,8 @@ class TransaksiController extends Controller
 {
     public function index()
     {
-        $transaksis = Transaksi::latest()->paginate(10);
-        return view('Transaksi')->with('transaksis', $transaksis);
+        $transaksis = Transaksi::paginate(10);
+        return view('Transaksi', compact('transaksis'));
     }
 
     public function create()
