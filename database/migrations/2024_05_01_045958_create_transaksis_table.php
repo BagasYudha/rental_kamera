@@ -12,16 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('transaksis', function (Blueprint $table) {
-            $table->id_transaksi();
-<<<<<<< HEAD
-            $table->string('nama', 50);
-            $table->string('jaminan');
-            $table->string('namabarang', 50);
-=======
+            $table->id();
             $table->string('nama', 100);
             $table->string('jaminan', 100);
-            $table->string('nama_item', 100);
->>>>>>> f711b4c125b2f4a3a1720c65683b7e8abd6d2767
+            $table->string('namabarang', 100); // Sesuaikan dengan nama kolom yang ada pada aplikasi Anda
             $table->string('jamAmbil', 100);
             $table->string('tglAmbil', 100);
             $table->string('tglKembali', 100);
