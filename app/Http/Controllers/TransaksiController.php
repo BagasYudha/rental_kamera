@@ -16,8 +16,8 @@ class TransaksiController extends Controller
 
     public function create()
     {
-        $barang = Product::all();
-        return view('tambah', compact('barang'));
+        $products = Product::all();
+        return view('tambah', compact('products'));
     }
 
     public function store(Request $request)

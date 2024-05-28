@@ -31,13 +31,20 @@ body {
   margin-bottom: 5px; 
 }
 
-.peringatan {
-  /* display: none;  */
-  color: red; /* Warna teks merah untuk pesan peringatan */
+.select-barang {
+  width: 100%;
+  padding: 12px; 
+  margin-top: 1px;
+  border-radius: 5px;
+  border: 1px solid #984bd8;
+  margin-bottom: 5px; 
+  background-color: white; 
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .form-group label {
-  width: 100%; /* Set label menjadi 100% lebar */
+  width: 100%;
   font-weight: bold;
   color: #000000b2; 
   margin-bottom: 5px; 
@@ -47,12 +54,12 @@ body {
 .form-group input[type="text"],
 .form-group input[type="date"],
 .form-group input[type="time"] {
-  width: 100%; /* Set input menjadi 100% lebar */
+  width: 100%;
   padding: 12px; 
   margin-top: 1px;
   border-radius: 5px;
   border: 1px solid #984bd8;
-  margin-bottom: 5px; /* Atur jarak antara elemen-elemen */
+  margin-bottom: 5px;
 }
 
 
