@@ -97,10 +97,16 @@ body {
   background-color: #864AFA; 
   color: #ffffff;
   border: none; 
-  padding: 10px 20px; 
+  font-size: 1px;
+  display: inline-flex;
+  padding: 0.1px 0.1px; 
   border-radius: 5px; 
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
+}
+
+.tombol box-icon {
+  margin-left: 1px;
 }
 
 .tombol:hover{

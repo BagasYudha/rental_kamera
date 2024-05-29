@@ -8,6 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="Transaksi.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 
 </head>
 
@@ -57,7 +59,9 @@
                         <form action="{{ route('transaksi.destroy', $transaksi->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="tombol">Selesai</button>
+                            <button type="submit" class="tombol">
+                                <box-icon name='check' color="white"  size="35px"></box-icon>
+                            </button>                        
                         </form>
                     </td>
                 </tr>
