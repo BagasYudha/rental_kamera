@@ -122,14 +122,14 @@ img {
     background-color: #ae00ff;
     width: 200px;
     height: 45px;
-    margin-left: 70px;
+    margin-left: 60px;
     border-radius: 25px; 
 }
 
 .logo-whatsapp img {
-    width: 35px;
+    width: 75px;
     margin-left: 10px; 
-    margin-bottom: 100px;
+    margin-bottom: 130px;
     border: none;
 }
 

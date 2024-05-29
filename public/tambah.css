@@ -19,7 +19,7 @@ body {
 }
 
 .form-group {
-  width: 97%;
+  width: 95%;
   margin-bottom: 30px; 
   display: flex;
   flex-wrap: wrap; 
@@ -31,7 +31,7 @@ body {
   margin-bottom: 5px; 
 }
 
-.select-barang {
+.input-box {
   width: 100%;
   padding: 12px; 
   margin-top: 1px;
@@ -50,18 +50,6 @@ body {
   margin-bottom: 5px; 
   font-family: 'Poppins', sans-serif;
 }
-
-.form-group input[type="text"],
-.form-group input[type="date"],
-.form-group input[type="time"] {
-  width: 100%;
-  padding: 12px; 
-  margin-top: 1px;
-  border-radius: 5px;
-  border: 1px solid #984bd8;
-  margin-bottom: 5px;
-}
-
 
 .button-container {
   width: 100%; 
