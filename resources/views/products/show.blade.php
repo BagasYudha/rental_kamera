@@ -31,7 +31,7 @@
                         </code>
                         <hr />
                         <p>Stok: {{ $product->stock }}</p>
-                        <p>Kategori: {{ $product->kategori ? $product->kategori->nama : 'Tidak ada kategori' }}</p> <!-- Tambahkan keterangan kategori -->
+                        <p>Kategori: {{ $product->kategoris ? $product->kategori->nama : 'Belum ada kategori' }}</p> <!-- Tambahkan keterangan kategori -->
                     </div>
                 </div>
             </div>

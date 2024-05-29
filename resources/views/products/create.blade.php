@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,7 +63,7 @@
 
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">KATEGORI PRODUK</label>
-                                <select class="form-control @error('kategori_id') is-invalid @enderror" name="kategori_id">
+                                <select class="form-control @error('kategoris.id') is-invalid @enderror" name="kategoris.id">
                                     <option value="">Pilih Kategori</option>
                                     <option value="1" {{ old('kategori_id') == 1 ? 'selected' : '' }}>Kamera</option>
                                     <option value="2" {{ old('kategori_id') == 2 ? 'selected' : '' }}>Lensa</option>

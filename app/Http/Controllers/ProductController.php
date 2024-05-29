@@ -121,7 +121,7 @@ class ProductController extends Controller
             'price' => 'required|numeric',
             'stock' => 'required|numeric',
             'categories' => 'required|array',
-            'categories.*' => 'exists:kategoris,id'
+            'categories.*' => 'exists:kategoris.id'
         ]);
 
         $product = Product::findOrFail($id);
