@@ -18,6 +18,8 @@ return new class extends Migration
             $table->text('description');
             $table->bigInteger('price');
             $table->integer('stock')->default(0);
+            $table->unsignedBigInteger('kategori_id'); // foreign key
+            $table->foreign('kategori_id')->references('id')->on('kategoris')->onDelete('cascade');
             $table->timestamps();
         });
     }
