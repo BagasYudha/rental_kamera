@@ -87,7 +87,7 @@ body {
     font-family: var(--font-poppins);
     font-size: var(--font-size-base);
     background-color: transparent;
-    height: 19px;
+    height: 20px;
     position: relative;
     color: rgb(0, 0, 0);
     text-align: left;
@@ -140,13 +140,13 @@ body {
     max-width: 100%;
   }
   .masukan-password {
-    width: 175.9px;
+    width: 500px;
     border: 0;
     outline: 0;
     font-family: var(--font-poppins);
     font-size: var(--font-size-base);
     background-color: transparent;
-    height: 24.4px;
+    height: 20px;
     position: relative;
     color: rgb(0, 0, 0);
     text-align: left;
