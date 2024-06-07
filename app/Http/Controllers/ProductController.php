@@ -22,7 +22,7 @@ class ProductController extends Controller
      *
      * @return void
      */
-    public function index() : View
+    public function index(): View
     {
         // Dapatkan semua produk
         $products = Product::latest()->paginate(10);
@@ -52,7 +52,7 @@ class ProductController extends Controller
         // Validasi form
         $request->validate([
             'image'         => 'required|image|mimes:jpeg,jpg,png|max:2048',
-            'title'         => 'required|min:5',
+            'nama_item'         => 'required|min:5',
             'description'   => 'required|min:10',
             'price'         => 'required|numeric',
             'stock'         => 'required|numeric'
@@ -60,12 +60,12 @@ class ProductController extends Controller
 
         // Unggah gambar
         $image = $request->file('image');
-        $image->storeAs('public/products', $image->hashName());
+        $image->storeAs('public/products/', $image->hashName());
 
         // Buat produk
         Product::create([
             'image'         => $image->hashName(),
-            'title'         => $request->title,
+            'nama_item'     => $request->nama_item,
             'description'   => $request->description,
             'price'         => $request->price,
             'stock'         => $request->stock
@@ -117,7 +117,7 @@ class ProductController extends Controller
         // Validasi form
         $request->validate([
             'image'         => 'image|mimes:jpeg,jpg,png|max:2048',
-            'title'         => 'required|min:5',
+            'nama_item'         => 'required|min:5',
             'description'   => 'required|min:10',
             'price'         => 'required|numeric',
             'stock'         => 'required|numeric'
@@ -131,25 +131,24 @@ class ProductController extends Controller
 
             // Unggah gambar baru
             $image = $request->file('image');
-            $image->storeAs('public/products', $image->hashName());
+            $image->storeAs('public/products/', $image->hashName());
 
             // Hapus gambar lama
-            Storage::delete('public/products/'.$product->image);
+            Storage::delete('public/products/' . $product->image);
 
             // Perbarui produk dengan gambar baru
             $product->update([
                 'image'         => $image->hashName(),
-                'title'         => $request->title,
+                'nama_item'         => $request->nama_item,
                 'description'   => $request->description,
                 'price'         => $request->price,
                 'stock'         => $request->stock
             ]);
-
         } else {
 
             // Perbarui produk tanpa gambar
             $product->update([
-                'title'         => $request->title,
+                'nama_item'         => $request->nama_item,
                 'description'   => $request->description,
                 'price'         => $request->price,
                 'stock'         => $request->stock
@@ -172,7 +171,7 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
 
         // Hapus gambar
-        Storage::delete('public/products/'. $product->image);
+        Storage::delete('public/products/' . $product->image);
 
         // Hapus produk
         $product->delete();

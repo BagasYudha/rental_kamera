@@ -15,13 +15,11 @@
 
 <body>
     <nav class="px-[20px] font-['Poppins'] justify-between items-center flex w-full h-20 bg-[#e8fffb67] backdrop-blur-sm border-b-[1px] border-white">
-        <a href="/adminlog" class="justify-start w-56 h-full bg-cover bg-center" style="background-image: url('Media/Logo-hitam.png')">
-        </a>
+        <div class="justify-start w-56 h-full bg-cover bg-center" style="background-image: url('Media/Logo-hitam.png')">
+        </div>
         <div class="flex justify-end w-full h-full items-center font-sans">
-            <a href="/" class="link font-bold px-3 py-2 mx-3">Beranda</a>
-            <a href="/rental" class="link font-bold px-3 py-2 mx-3">Rental</a>
-            <a href="/spesifikasi" class="link font-bold px-3 py-2 mx-3">Spesifikasi</a>
-            <a href="/#Contact" class="link font-bold px-3 py-2 mx-3">Hubungi Kami</a>
+            <a href="/products" class="link font-bold px-3 py-2 mx-3">Dashboard</a>
+            <a href="/Transaksi" class="link font-bold px-3 py-2 mx-3">Transaksi</a>
         </div>
 
     </nav>
@@ -29,5 +27,4 @@
 
 </body>
 
-</html>
 </html>

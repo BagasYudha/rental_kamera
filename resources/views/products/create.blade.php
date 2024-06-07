@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Tambah Produk</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body style="background: lightcyan">
 
     <div class="container mt-5 mb-5">
@@ -24,21 +26,21 @@
 
                                 <!-- Pesan error untuk image -->
                                 @error('image')
-                                    <div class="alert alert-danger mt-2">
-                                        Gambar wajib diunggah.
-                                    </div>
+                                <div class="alert alert-danger mt-2">
+                                    Gambar wajib diunggah.
+                                </div>
                                 @enderror
                             </div>
 
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">NAMA PRODUK</label>
-                                <input type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}" placeholder="Masukkan Nama Produk">
+                                <input type="text" class="form-control @error('nama_item') is-invalid @enderror" name="nama_item" value="{{ old('nama_item') }}" placeholder="Masukkan Nama Produk">
 
                                 <!-- Pesan error untuk title -->
-                                @error('title')
-                                    <div class="alert alert-danger mt-2">
-                                        Nama produk wajib diisi.
-                                    </div>
+                                @error('nama_item')
+                                <div class="alert alert-danger mt-2">
+                                    Nama produk wajib diisi.
+                                </div>
                                 @enderror
                             </div>
 
@@ -48,9 +50,9 @@
 
                                 <!-- Pesan error untuk description -->
                                 @error('description')
-                                    <div class="alert alert-danger mt-2">
-                                        Deskripsi produk wajib diisi.
-                                    </div>
+                                <div class="alert alert-danger mt-2">
+                                    Deskripsi produk wajib diisi.
+                                </div>
                                 @enderror
                             </div>
 
@@ -62,9 +64,9 @@
 
                                         <!-- Pesan error untuk price -->
                                         @error('price')
-                                            <div class="alert alert-danger mt-2">
-                                                Harga produk wajib diisi dengan angka.
-                                            </div>
+                                        <div class="alert alert-danger mt-2">
+                                            Harga produk wajib diisi dengan angka.
+                                        </div>
                                         @enderror
                                     </div>
                                 </div>
@@ -75,9 +77,9 @@
 
                                         <!-- Pesan error untuk stock -->
                                         @error('stock')
-                                            <div class="alert alert-danger mt-2">
-                                                Stok produk wajib diisi dengan angka.
-                                            </div>
+                                        <div class="alert alert-danger mt-2">
+                                            Stok produk wajib diisi dengan angka.
+                                        </div>
                                         @enderror
                                     </div>
                                 </div>
@@ -95,4 +97,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

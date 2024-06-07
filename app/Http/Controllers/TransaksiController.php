@@ -15,7 +15,6 @@ class TransaksiController extends Controller
     {
         $transaksis = transaksi::latest()->paginate(10);
         return view('Transaksi')->with('transaksis', $transaksis);
-
     }
 
     /**
@@ -34,7 +33,7 @@ class TransaksiController extends Controller
         $request->validate([
             'nama' => 'required|max:100',
             'jaminan' => 'required|max:100',
-            'namabarang' => 'required|max:100',
+            'nama_item' => 'required|max:100',
             'jamAmbil' => 'required|max:100',
             'tglAmbil' => 'required|max:100',
             'tglKembali' => 'required|max:100',
@@ -43,14 +42,13 @@ class TransaksiController extends Controller
         $transaksi = new Transaksi();
         $transaksi->nama = $request->nama;
         $transaksi->jaminan = $request->jaminan;
-        $transaksi->namabarang = $request->namabarang;
+        $transaksi->nama_item = $request->nama_item;
         $transaksi->jamAmbil = $request->jamAmbil;
         $transaksi->tglAmbil = $request->tglAmbil;
         $transaksi->tglKembali = $request->tglKembali;
         $transaksi->save();
 
         return redirect()->route('transaksi.index');
-
     }
 
     /**
@@ -83,9 +81,9 @@ class TransaksiController extends Controller
     public function destroy(string $id)
     {
         $transaksi = Transaksi::findOrFail($id);
-    
-    $transaksi->delete();
-    
-    return redirect()->route('transaksi.index');
+
+        $transaksi->delete();
+
+        return redirect()->route('transaksi.index');
     }
 }

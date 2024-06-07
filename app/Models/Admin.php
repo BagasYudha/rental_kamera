@@ -15,5 +15,7 @@ class Admin extends Model
         'username', 'password' , 'token' , 'email'// Kolom yang dapat diisi
     ];
 
+    protected $primaryKey = 'id_admin';
+
     // Anda bisa menambahkan relasi atau fungsi lainnya di sini
 }

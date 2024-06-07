@@ -15,14 +15,14 @@
     <div class="login-admin">
         <div class="login-admin-inner">
             <form id="loginForm" action="{{route('admin.login')}}" method="POST" class="rectangle-parent">
-                @csrf 
+                @csrf
                 {{-- <div class="frame-child"></div> --}}
-                
+
                 <div class="welcomeback-mimin-wrapper">
                     <h1 class="welcomeback-mimin">WelcomeBack Mimin!</h1>
                 </div>
                 @if (session('success'))
-                    <span class="py-1 px-2 bg-green-300 rounded-sm">{{ session('success') }}</span>
+                <span class="py-1 px-2 bg-green-300 rounded-sm">{{ session('success') }}</span>
                 @endif
                 <div class="id-admin-parent">
                     <b class="id-admin">ID Admin</b>
@@ -47,17 +47,18 @@
         </div>
         <div class="ellipse-parent">
             <div class="ellipse-div"></div>
-            <img class="c002-xa75-primary-1-icon" loading="lazy" alt="" src="media/imageadminlogin.png">
+            <img class="c002-xa75-primary-1-icon" loading="lazy" alt="" src="Media/imageadminlogin.png">
         </div>
     </div>
 
-    @if ($errors->any())
+    <!-- @if ($errors->any())
     <script>
-        @foreach ($errors->all() as $error)
-            alert('{{ $error }}');
+        @foreach($errors->all() as $error)
+        alert('{{ $error }}');
         @endforeach
     </script>
-    @endif
+    @endif -->
+
 
 
 </body>

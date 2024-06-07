@@ -30,7 +30,6 @@ nav {
 
 .link {
     position: relative;
-    @apply relative font-bold px-3 py-2 mx-3;
     color: black; /* Warna teks default */
     transition: color 0.3s ease; /* Transisi warna teks */
 }
@@ -40,8 +39,7 @@ nav {
 }
 
 .link::after {
-    @apply block absolute bottom-0 left-0 w-0 h-2 bg-white;
-    content: "";
+    
     transition: width 0.3s ease;
     display: block;
     position: absolute;
@@ -131,7 +129,7 @@ img {
 .logo-whatsapp img {
     width: 35px;
     margin-left: 10px; 
-    margin-bottom: 130px;
+    margin-bottom: 100px;
     border: none;
 }
 

@@ -14,14 +14,11 @@ body {
 }
 
 .link {
+  scroll-behavior: smooth;
   position: relative;
   @apply relative font-bold px-3 py-2 mx-3;
   color: black; /* Warna teks default */
   transition: color 0.3s ease; /* Transisi warna teks */
-}
-
-.link:hover {
-  color: #811ef1;
 }
 
 .link::after {
@@ -34,13 +31,16 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #811ef1;
+  background-color: #33baff;
+}
+
+.link:hover {
+  color: #33baff;
 }
 
 .link:hover::after {
-  width: 100%; 
+  width: 100%;
 }
-
 
 .container {
   width: 80%;
@@ -68,7 +68,7 @@ body {
 }
 
 .TambahTransaksi:hover{
-  background-color: #0e5b5e;
+  background-color: #100a64;
 }
 
 .transaksi + hr {

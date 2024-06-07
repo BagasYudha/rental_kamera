@@ -13,9 +13,13 @@ return new class extends Migration
     {
         Schema::create('transaksis', function (Blueprint $table) {
             $table->id_transaksi();
+
+            $table->string('nama', 50);
+            $table->string('jaminan');
+            $table->string('namabarang', 50);
             $table->string('nama', 100);
             $table->string('jaminan', 100);
-            $table->string('namabarang', 100);
+            $table->string('nama_item', 100);
             $table->string('jamAmbil', 100);
             $table->string('tglAmbil', 100);
             $table->string('tglKembali', 100);

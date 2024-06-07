@@ -13,7 +13,6 @@
 
     <script src="https://unpkg.com/feather-icons"></script>
 
-
 </head>
 
 <body class="bg-[#E8FFFB] font-['Poppins'] w-full overflow-x-hidden">
