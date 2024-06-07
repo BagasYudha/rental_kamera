@@ -25,12 +25,13 @@
                     <div class="card-body">
                         <h3>{{ $product->nama_item }}</h3>
                         <hr />
-                        <p>{{ "Rp " . number_format($product->price,2,',','.') }}</p>
+                        <p>{{ "Rp " . number_format($product->price, 2, ',', '.') }}</p>
                         <code>
                             <p>{!! $product->description !!}</p>
                         </code>
                         <hr />
-                        <p>Stok : {{ $product->stock }}</p>
+                        <p>Stok: {{ $product->stock }}</p>
+                        <p>Kategori: {{ $product->kategori ? $product->kategori->nama : 'Tidak ada kategori' }}</p> <!-- Tambahkan keterangan kategori -->
                     </div>
                 </div>
             </div>

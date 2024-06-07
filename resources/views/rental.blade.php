@@ -13,24 +13,6 @@
 
     <script src="https://unpkg.com/feather-icons"></script>
 
-    <style>
-        .link-item {
-    transform-origin: 50% 50%;
-    width: 190px;
-    height: 230px;
-    padding: 0px 16px 0px 16px;
-    border-radius: 16px;
-    border-width: 2px;
-    border-color: #e4f6ff;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.link-item:hover {
-    scale: 1.05;
-    border-color: #8152fb;
-}
-    </style>
 
 </head>
 
@@ -82,278 +64,25 @@
             <!-- camera -->
             <section id="camera" class="flex flex-wrap gap-4">
                 <!-- Item -->
-                <a href="/spesifikasi">
-                    <div class="link-item">
-                        <div>
-                            <img src="Media/rental/26_eos_250d_bk_thefront_ef-s18-55iii_d4120ae9eba94280ab1158c449525a54.png" alt="Item Sewa" class="h-2/5">
-                        </div>
-                        <h1 class="font-bold mt-[-8px]">Canon EOS 200D</h1>
-                        <p class="font-normal text-xs">Tersedia 5</p>
-                        <h1 class="text-[#8152fb] font-semibold">Rp 50.000/hari</h1>
-                    </div>
-                </a>
 
-                <!-- Item -->
+                @foreach ($products as $product)
                 <a href="/spesifikasi">
                     <div class="link-item">
-                        <div>
-                            <img src="Media/rental/26_eos_250d_bk_thefront_ef-s18-55iii_d4120ae9eba94280ab1158c449525a54.png" alt="Item Sewa" class="h-2/5">
+                        <div class="h-2/5 ">
+                            <img src="{{ asset('/storage/products/' . $product->image) }}" alt="{{ $product->nama_item }}" style="object-fit:cover" class="w-[154px] h-[154px] " />
                         </div>
-                        <h1 class="font-bold mt-[-8px]">Canon EOS 200D</h1>
-                        <p class="font-normal text-xs">Tersedia 5</p>
-                        <h1 class="text-[#8152fb] font-semibold">Rp 50.000/hari</h1>
+                        <div class="mt-4">
+                            <h1 class="font-bold mt-[-8px]">{{$product->nama_item}}</h1>
+                            <p class="font-normal text-xs">Tersedia {{ $product->stock }}</p>
+                            <h1 class="text-[#8152fb] font-semibold">{{ "Rp " . number_format($product->price,2,',','.') }}</h1>
+                        </div>
                     </div>
                 </a>
-
-                <!-- Item -->
-                <a href="/spesifikasi">
-                    <div class="link-item">
-                        <div>
-                            <img src="Media/rental/26_eos_250d_bk_thefront_ef-s18-55iii_d4120ae9eba94280ab1158c449525a54.png" alt="Item Sewa" class="h-2/5">
-                        </div>
-                        <h1 class="font-bold mt-[-8px]">Canon EOS 200D</h1>
-                        <p class="font-normal text-xs">Tersedia 5</p>
-                        <h1 class="text-[#8152fb] font-semibold">Rp 50.000/hari</h1>
-                    </div>
-                </a>
-
-                <!-- Item -->
-                <a href="/spesifikasi">
-                    <div class="link-item">
-                        <div>
-                            <img src="Media/rental/26_eos_250d_bk_thefront_ef-s18-55iii_d4120ae9eba94280ab1158c449525a54.png" alt="Item Sewa" class="h-2/5">
-                        </div>
-                        <h1 class="font-bold mt-[-8px]">Canon EOS 200D</h1>
-                        <p class="font-normal text-xs">Tersedia 5</p>
-                        <h1 class="text-[#8152fb] font-semibold">Rp 50.000/hari</h1>
-                    </div>
-                </a>
-
-                <!-- Item -->
-                <a href="/spesifikasi">
-                    <div class="link-item">
-                        <div>
-                            <img src="Media/rental/26_eos_250d_bk_thefront_ef-s18-55iii_d4120ae9eba94280ab1158c449525a54.png" alt="Item Sewa" class="h-2/5">
-                        </div>
-                        <h1 class="font-bold mt-[-8px]">Canon EOS 200D</h1>
-                        <p class="font-normal text-xs">Tersedia 5</p>
-                        <h1 class="text-[#8152fb] font-semibold">Rp 50.000/hari</h1>
-                    </div>
-                </a>
-
-                <!-- Item -->
-                <a href="/spesifikasi">
-                    <div class="link-item">
-                        <div>
-                            <img src="Media/rental/26_eos_250d_bk_thefront_ef-s18-55iii_d4120ae9eba94280ab1158c449525a54.png" alt="Item Sewa" class="h-2/5">
-                        </div>
-                        <h1 class="font-bold mt-[-8px]">Canon EOS 200D</h1>
-                        <p class="font-normal text-xs">Tersedia 5</p>
-                        <h1 class="text-[#8152fb] font-semibold">Rp 50.000/hari</h1>
-                    </div>
-                </a>
-
-                <!-- Item -->
-                <a href="/spesifikasi">
-                    <div class="link-item">
-                        <div>
-                            <img src="Media/rental/26_eos_250d_bk_thefront_ef-s18-55iii_d4120ae9eba94280ab1158c449525a54.png" alt="Item Sewa" class="h-2/5">
-                        </div>
-                        <h1 class="font-bold mt-[-8px]">Canon EOS 200D</h1>
-                        <p class="font-normal text-xs">Tersedia 5</p>
-                        <h1 class="text-[#8152fb] font-semibold">Rp 50.000/hari</h1>
-                    </div>
-                </a>
-
-                <!-- Item -->
-                <a href="/spesifikasi">
-                    <div class="link-item">
-                        <div>
-                            <img src="Media/rental/26_eos_250d_bk_thefront_ef-s18-55iii_d4120ae9eba94280ab1158c449525a54.png" alt="Item Sewa" class="h-2/5">
-                        </div>
-                        <h1 class="font-bold mt-[-8px]">Canon EOS 200D</h1>
-                        <p class="font-normal text-xs">Tersedia 5</p>
-                        <h1 class="text-[#8152fb] font-semibold">Rp 50.000/hari</h1>
-                    </div>
-                </a>
-
-                <!-- Item -->
-                <a href="/spesifikasi">
-                    <div class="link-item">
-                        <div>
-                            <img src="Media/rental/26_eos_250d_bk_thefront_ef-s18-55iii_d4120ae9eba94280ab1158c449525a54.png" alt="Item Sewa" class="h-2/5">
-                        </div>
-                        <h1 class="font-bold mt-[-8px]">Canon EOS 200D</h1>
-                        <p class="font-normal text-xs">Tersedia 5</p>
-                        <h1 class="text-[#8152fb] font-semibold">Rp 50.000/hari</h1>
-                    </div>
-                </a>
-
-                <!-- Item -->
-                <a href="/spesifikasi">
-                    <div class="link-item">
-                        <div>
-                            <img src="Media/rental/26_eos_250d_bk_thefront_ef-s18-55iii_d4120ae9eba94280ab1158c449525a54.png" alt="Item Sewa" class="h-2/5">
-                        </div>
-                        <h1 class="font-bold mt-[-8px]">Canon EOS 200D</h1>
-                        <p class="font-normal text-xs">Tersedia 5</p>
-                        <h1 class="text-[#8152fb] font-semibold">Rp 50.000/hari</h1>
-                    </div>
-                </a>
-
-                <!-- Item -->
-                <a href="/spesifikasi">
-                    <div class="link-item">
-                        <div>
-                            <img src="Media/rental/26_eos_250d_bk_thefront_ef-s18-55iii_d4120ae9eba94280ab1158c449525a54.png" alt="Item Sewa" class="h-2/5">
-                        </div>
-                        <h1 class="font-bold mt-[-8px]">Canon EOS 200D</h1>
-                        <p class="font-normal text-xs">Tersedia 5</p>
-                        <h1 class="text-[#8152fb] font-semibold">Rp 50.000/hari</h1>
-                    </div>
-                </a>
-
-                <!-- Item -->
-                <a href="/spesifikasi">
-                    <div class="link-item">
-                        <div>
-                            <img src="Media/rental/26_eos_250d_bk_thefront_ef-s18-55iii_d4120ae9eba94280ab1158c449525a54.png" alt="Item Sewa" class="h-2/5">
-                        </div>
-                        <h1 class="font-bold mt-[-8px]">Canon EOS 200D</h1>
-                        <p class="font-normal text-xs">Tersedia 5</p>
-                        <h1 class="text-[#8152fb] font-semibold">Rp 50.000/hari</h1>
-                    </div>
-                </a>
+                @endforeach
+                <!-- item end  -->
             </section>
-            <!-- camera end -->
-
-            <!-- lensa -->
-            <div class="my-[20px]">
-                <section id="lensa" class="flex flex-wrap gap-4">
-
-                    <!-- Item -->
-                    <a href="/spesifikasi">
-                        <div class="link-item">
-                            <div>
-                                <img src="Media/rental/Lensa1.png" alt="Item Sewa" class="h-2/5">
-                            </div>
-                            <h1 class="font-bold">Sony Fix 35mm</h1>
-                            <p class="font-normal text-xs">Tersedia 12</p>
-                            <h1 class="text-[#8152fb] font-semibold">Rp 40.000/hari</h1>
-                        </div>
-                    </a>
-
-                    <!-- Item -->
-                    <a href="/spesifikasi">
-                        <div class="link-item">
-                            <div>
-                                <img src="Media/rental/Lensa1.png" alt="Item Sewa" class="h-2/5">
-                            </div>
-                            <h1 class="font-bold">Sony Fix 35mm</h1>
-                            <p class="font-normal text-xs">Tersedia 12</p>
-                            <h1 class="text-[#8152fb] font-semibold">Rp 40.000/hari</h1>
-                        </div>
-                    </a>
-
-                    <!-- Item -->
-                    <a href="/spesifikasi">
-                        <div class="link-item">
-                            <div>
-                                <img src="Media/rental/Lensa1.png" alt="Item Sewa" class="h-2/5">
-                            </div>
-                            <h1 class="font-bold">Sony Fix 35mm</h1>
-                            <p class="font-normal text-xs">Tersedia 12</p>
-                            <h1 class="text-[#8152fb] font-semibold">Rp 40.000/hari</h1>
-                        </div>
-                    </a>
-
-                    <!-- Item -->
-                    <a href="/spesifikasi">
-                        <div class="link-item">
-                            <div>
-                                <img src="Media/rental/Lensa1.png" alt="Item Sewa" class="h-2/5">
-                            </div>
-                            <h1 class="font-bold">Sony Fix 35mm</h1>
-                            <p class="font-normal text-xs">Tersedia 12</p>
-                            <h1 class="text-[#8152fb] font-semibold">Rp 40.000/hari</h1>
-                        </div>
-                    </a>
-
-                    <!-- Item -->
-                    <a href="/spesifikasi">
-                        <div class="link-item">
-                            <div>
-                                <img src="Media/rental/Lensa1.png" alt="Item Sewa" class="h-2/5">
-                            </div>
-                            <h1 class="font-bold">Sony Fix 35mm</h1>
-                            <p class="font-normal text-xs">Tersedia 12</p>
-                            <h1 class="text-[#8152fb] font-semibold">Rp 40.000/hari</h1>
-                        </div>
-                    </a>
-
-                    <!-- Item -->
-                    <a href="/spesifikasi">
-                        <div class="link-item">
-                            <div>
-                                <img src="Media/rental/Lensa1.png" alt="Item Sewa" class="h-2/5">
-                            </div>
-                            <h1 class="font-bold">Sony Fix 35mm</h1>
-                            <p class="font-normal text-xs">Tersedia 12</p>
-                            <h1 class="text-[#8152fb] font-semibold">Rp 40.000/hari</h1>
-                        </div>
-                    </a>
-
-                    <!-- Item -->
-                    <a href="/spesifikasi">
-                        <div class="link-item">
-                            <div>
-                                <img src="Media/rental/Lensa1.png" alt="Item Sewa" class="h-2/5">
-                            </div>
-                            <h1 class="font-bold">Sony Fix 35mm</h1>
-                            <p class="font-normal text-xs">Tersedia 12</p>
-                            <h1 class="text-[#8152fb] font-semibold">Rp 40.000/hari</h1>
-                        </div>
-                    </a>
-
-                    <!-- Item -->
-                    <a href="/spesifikasi">
-                        <div class="link-item">
-                            <div>
-                                <img src="Media/rental/Lensa1.png" alt="Item Sewa" class="h-2/5">
-                            </div>
-                            <h1 class="font-bold">Sony Fix 35mm</h1>
-                            <p class="font-normal text-xs">Tersedia 12</p>
-                            <h1 class="text-[#8152fb] font-semibold">Rp 40.000/hari</h1>
-                        </div>
-                    </a>
-
-                    <!-- Item -->
-                    <a href="/spesifikasi">
-                        <div class="link-item">
-                            <div>
-                                <img src="Media/rental/Lensa1.png" alt="Item Sewa" class="h-2/5">
-                            </div>
-                            <h1 class="font-bold">Sony Fix 35mm</h1>
-                            <p class="font-normal text-xs">Tersedia 12</p>
-                            <h1 class="text-[#8152fb] font-semibold">Rp 40.000/hari</h1>
-                        </div>
-                    </a>
-
-                    <!-- Item -->
-                    <a href="/spesifikasi">
-                        <div class="link-item">
-                            <div>
-                                <img src="Media/rental/Lensa1.png" alt="Item Sewa" class="h-2/5">
-                            </div>
-                            <h1 class="font-bold">Sony Fix 35mm</h1>
-                            <p class="font-normal text-xs">Tersedia 12</p>
-                            <h1 class="text-[#8152fb] font-semibold">Rp 40.000/hari</h1>
-                        </div>
-                    </a>
-
-                </section>
-            </div>
-            <!-- lensa end -->
+        </div>
+        <!-- lensa end -->
 
     </section>
     </div>

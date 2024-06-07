@@ -39,7 +39,9 @@
             <!-- div gambar -->
             <div class="absolute right-[-300px] mt-[-30px]">
                 <div class="relative">
+                    <a href="/adminlog">
                     <img src="Media/imageadminlogin.png" alt="Gambar kamera" class="top-0 z-1">
+                </a>
                     <span class="absolute top-0 w-full -z-10">
                         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full">
                             <g transform="scale(1)">

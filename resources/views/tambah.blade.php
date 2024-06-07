@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Transaksi</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
-    <link rel="stylesheet" href="tambah.css">
+    <link rel="stylesheet" href="{{ asset('tambah.css') }}">
 </head>
 <body>
     <div class="container">
@@ -15,21 +15,26 @@
             <div class="form-group">
                 <div class="left">
                     <label for="nama">Nama Penyewa</label>
-                    <input type="text" id="nama" name="nama" required>
+                    <input type="text" id="nama" name="nama" required class="input-box">
                 </div>
                 <div class="right">
                     <label for="jamAmbil">Jam Ambil</label>
-                    <input type="time" id="jamAmbil" name="jamAmbil" required>
+                    <input type="time" id="jamAmbil" name="jamAmbil" required class="input-box">
                 </div>
             </div>
             <div class="form-group">
                 <div class="left">
                     <label for="nama_item">Nama Barang</label>
-                    <input type="text" id="nama_item" name="nama_item" required>
+                    <select id="nama_item" name="nama_item" required class="input-box">
+                        <option value="" disabled selected>Pilih barang</option>
+                        @foreach($products as $product)
+                            <option value="{{ $product->nama_item }}">{{ $product->nama_item }}</option>
+                        @endforeach
+                    </select>
                 </div>
                 <div class="right">
                     <label for="tglAmbil">Tanggal Ambil</label>
-                    <input type="date" id="tglAmbil" name="tglAmbil" required>
+                    <input type="date" id="tglAmbil" name="tglAmbil" required class="input-box">
                 </div>
             </div>
             <div class="form-group">
@@ -44,7 +49,7 @@
                 </div>
                 <div class="right">
                     <label for="tglKembali">Tanggal Kembali</label>
-                    <input type="date" id="tglKembali" name="tglKembali" required>
+                    <input type="date" id="tglKembali" name="tglKembali" required class="input-box">
                 </div>
             </div>
             <div class="button-container">
