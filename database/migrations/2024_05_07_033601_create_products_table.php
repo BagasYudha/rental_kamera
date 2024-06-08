@@ -12,14 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('products', function (Blueprint $table) {
-            $table->id_products();
+            $table->id();  // Ini untuk id yang auto-increment
             $table->string('image');
-            $table->string('nama_item');
+            $table->string('nama_item', 25)->unique();
             $table->text('description');
+            $table->string('categories', 10);
             $table->bigInteger('price');
             $table->integer('stock')->default(0);
-            $table->unsignedBigInteger('kategori_id'); // foreign key
-            $table->foreign('kategori_id')->references('id')->on('kategoris')->onDelete('cascade');
             $table->timestamps();
         });
     }

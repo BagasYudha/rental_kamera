@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body style="background: lightcyan">
+<body>
 
     <div class="container mt-5 mb-5">
         <div class="row">
@@ -31,7 +31,7 @@
                         </code>
                         <hr />
                         <p>Stok: {{ $product->stock }}</p>
-                        <p>Kategori: {{ $product->kategori ? $product->kategori->nama : 'Tidak ada kategori' }}</p> <!-- Tambahkan keterangan kategori -->
+                        <p>Kategori: {{ $product->categories }}</p> <!-- Tambahkan keterangan kategori -->
                     </div>
                 </div>
             </div>

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body style="background: lightcyan" class="bg-[#E8FFFB] font-['Poppins'] w-full overflow-x-hidden">
+<body class="bg-[#ffffff] font-['Poppins'] w-full overflow-x-hidden">
     <!-- NAVBAR -->
     <div class="fixed w-full z-20 top-0">
         @include('products.navbarAdmin')
@@ -51,15 +51,10 @@
                                         <img src="{{ asset('/storage/products/' . $product->image) }}" alt="{{ $product->nama_item }}" class="rounded" style="width: 150px">
                                     </td>
                                     <td class="text-center">{{ $product->nama_item }}</td>
-                                    <td class="text-center">{{ $product->kategoris }}</td>
+                                    <td class="text-center">{{ $product->categories }}</td>
                                     <td class="text-center">{{ "Rp " . number_format($product->price,2,',','.') }}</td>
                                     <td class="text-center">{{ $product->stock }}</td>
                                     <td class="text-center">
-<<<<<<< HEAD
-                                        <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('products.destroy', $product->id_products) }}" method="POST">
-                                            <a href="{{ route('products.show', $product->id_products) }}" class="btn btn-sm" style="background-color: lightcyan; color: black; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">SHOW</a>
-                                            <a href="{{ route('products.edit', $product->id_products) }}" class="btn btn-sm" style="background-color: lightcyan; color: black; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">EDIT</a>
-=======
                                         <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('products.destroy', $product->id) }}" method="POST" class="d-flex justify-content-center align-items-center gap-1">
                                             <a href="{{ route('products.show', $product->id) }}" class="btn btn-sm d-flex align-items-center justify-content-center p-2" style="background-color: lightcyan; color: black; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); width: 40px; height: 40px;">
                                                 <img src="/Media/Icon/show.png" alt="Show" style="width: 20px;">
@@ -67,12 +62,11 @@
                                             <a href="{{ route('products.edit', $product->id) }}" class="btn btn-sm d-flex align-items-center justify-content-center p-2" style="background-color: lightcyan; color: black; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); width: 40px; height: 40px;">
                                                 <img src="/Media/Icon/pensil.png" alt="Edit" style="width: 20px;">
                                             </a>
->>>>>>> 9a305efb8b124aaadea00e08da32e102878350bd
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-sm btn-danger d-flex align-items-center justify-content-center p-2" style="box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); width: 40px; height: 40px;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 20px; fill: lightcyan;">
-                                                    <path d="M135.2 3.4C138.9 1.2 143.2 0 147.6 0H300.4c4.4 0 8.7 1.2 12.4 3.4L334 15H448v48H416v392c0 30.9-25.1 56-56 56H88c-30.9 0-56-25.1-56-56V63H0V15H114L135.2 3.4zM368 63H80v392c0 8.8 7.2 16 16 16H352c8.8 0 16-7.2 16-16V63zM160 128c8.8 0 16 7.2 16 16V368c0 8.8-7.2 16-16 16s-16-7.2-16-16V144C144 135.2 151.2 128 160 128zM288 128c8.8 0 16 7.2 16 16V368c0 8.8-7.2 16-16 16s-16-7.2-16-16V144C272 135.2 279.2 128 288 128z"/>
+                                                    <path d="M135.2 3.4C138.9 1.2 143.2 0 147.6 0H300.4c4.4 0 8.7 1.2 12.4 3.4L334 15H448v48H416v392c0 30.9-25.1 56-56 56H88c-30.9 0-56-25.1-56-56V63H0V15H114L135.2 3.4zM368 63H80v392c0 8.8 7.2 16 16 16H352c8.8 0 16-7.2 16-16V63zM160 128c8.8 0 16 7.2 16 16V368c0 8.8-7.2 16-16 16s-16-7.2-16-16V144C144 135.2 151.2 128 160 128zM288 128c8.8 0 16 7.2 16 16V368c0 8.8-7.2 16-16 16s-16-7.2-16-16V144C272 135.2 279.2 128 288 128z" />
                                                 </svg>
                                             </button>
                                         </form>
