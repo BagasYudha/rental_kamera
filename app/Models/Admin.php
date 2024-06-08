@@ -12,8 +12,11 @@ class Admin extends Model
     protected $table = 'tb_admin'; // Nama tabel di database
 
     protected $fillable = [
-        'username', 'password' , 'token'// Kolom yang dapat diisi
+        'username', 'password' , 'token' , 'email'// Kolom yang dapat diisi
     ];
+
+    protected $primaryKey = 'id'; // Update this to match your primary key column name
+    public $timestamps = true;
 
     // Anda bisa menambahkan relasi atau fungsi lainnya di sini
 }

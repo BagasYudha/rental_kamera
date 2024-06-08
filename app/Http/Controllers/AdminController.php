@@ -50,3 +50,4 @@ class AdminController extends Controller
      * @return \Illuminate\Contracts\View\View
      */
 }
+
