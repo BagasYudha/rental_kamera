@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,88 +22,81 @@
 
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">GAMBAR</label>
-                                <input type="file" class="form-control @error('image') is-invalid @enderror"
-                                    name="image">
+                                <input type="file" class="form-control @error('image') is-invalid @enderror" name="image">
 
                                 <!-- Pesan error untuk image -->
                                 @error('image')
-                                    <div class="alert alert-danger mt-2">
-                                        Gambar wajib diunggah.
-                                    </div>
+                                <div class="alert alert-danger mt-2">
+                                    Gambar wajib diunggah.
+                                </div>
                                 @enderror
                             </div>
 
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">NAMA PRODUK</label>
-                                <input type="text" class="form-control @error('nama_item') is-invalid @enderror"
-                                    name="nama_item" value="{{ old('nama_item') }}" placeholder="Masukkan Nama Produk">
+                                <input type="text" class="form-control @error('nama_item') is-invalid @enderror" name="nama_item" value="{{ old('nama_item') }}" placeholder="Masukkan Nama Produk">
 
                                 <!-- Pesan error untuk title -->
                                 @error('nama_item')
-                                    <div class="alert alert-danger mt-2">
-                                        Nama produk wajib diisi.
-                                    </div>
+                                <div class="alert alert-danger mt-2">
+                                    Nama produk wajib diisi.
+                                </div>
                                 @enderror
                             </div>
 
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">DESKRIPSI PRODUK</label>
-                                <textarea class="form-control @error('description') is-invalid @enderror"
-                                    name="description"
-                                    placeholder="Masukkan Deskripsi Produk">{{ old('description') }}</textarea>
+                                <textarea class="form-control @error('description') is-invalid @enderror" name="description" placeholder="Masukkan Deskripsi Produk">{{ old('description') }}</textarea>
 
                                 <!-- Pesan error untuk description -->
                                 @error('description')
-                                    <div class="alert alert-danger mt-2">
-                                        Deskripsi produk wajib diisi.
-                                    </div>
+                                <div class="alert alert-danger mt-2">
+                                    Deskripsi produk wajib diisi.
+                                </div>
                                 @enderror
                             </div>
 
                             <div class="form-group mb-3">
                                 <label class="font-weight-bold">KATEGORI PRODUK</label>
-                                <select class="form-control @error('kategori_id') is-invalid @enderror" name="kategori_id">
+                                <select class="form-control @error('categories') is-invalid @enderror" name="categories">
                                     <option value="">Pilih Kategori</option>
-                                    <option value="1" {{ old('kategori_id') == 1 ? 'selected' : '' }}>Kamera</option>
-                                    <option value="2" {{ old('kategori_id') == 2 ? 'selected' : '' }}>Lensa</option>
-                                    <option value="3" {{ old('kategori_id') == 3 ? 'selected' : '' }}>Tripod</option>
+                                    <option value="kamera" {{ old('categories') == 'kamera' ? 'selected' : '' }}>Kamera</option>
+                                    <option value="lensa" {{ old('categories') == 'lensa' ? 'selected' : '' }}>Lensa</option>
+                                    <option value="tripod" {{ old('categories') == 'tripod' ? 'selected' : '' }}>Tripod</option>
                                 </select>
 
-                                <!-- Pesan error untuk kategori_id -->
-                                @error('kategori_id')
+                                <!-- Pesan error untuk categories -->
+                                @error('categories')
                                 <div class="alert alert-danger mt-2">
                                     Kategori produk wajib dipilih.
                                 </div>
                                 @enderror
                             </div>
 
-
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group mb-3">
                                         <label class="font-weight-bold">HARGA SEWA</label>
-                                        <input type="number" class="form-control @error('price') is-invalid @enderror"
-                                            name="price" value="{{ old('price') }}" placeholder="Masukkan Harga Produk">
+                                        <input type="number" class="form-control @error('price') is-invalid @enderror" name="price" value="{{ old('price') }}" placeholder="Masukkan Harga Produk">
 
                                         <!-- Pesan error untuk price -->
                                         @error('price')
-                                            <div class="alert alert-danger mt-2">
-                                                Harga produk wajib diisi dengan angka.
-                                            </div>
+                                        <div class="alert alert-danger mt-2">
+                                            Harga produk wajib diisi dengan angka.
+                                        </div>
                                         @enderror
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group mb-3">
                                         <label class="font-weight-bold">STOK</label>
-                                        <input type="number" class="form-control @error('stock') is-invalid @enderror"
-                                            name="stock" value="{{ old('stock') }}" placeholder="Masukkan Stok Produk">
+                                        <input type="number" class="form-control @error('stock') is-invalid @enderror" name="stock" value="{{ old('stock') }}" placeholder="Masukkan Stok Produk">
 
                                         <!-- Pesan error untuk stock -->
                                         @error('stock')
-                                            <div class="alert alert-danger mt-2">
-                                                Stok produk wajib diisi dengan angka.
-                                            </div>
+                                        <div class="alert alert-danger mt-2">
+                                            Stok produk wajib diisi dengan angka.
+                                        </div>
                                         @enderror
                                     </div>
                                 </div>

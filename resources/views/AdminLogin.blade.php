@@ -22,7 +22,7 @@
                     <h1 class="welcomeback-mimin">WelcomeBack Mimin!</h1>
                 </div>
                 @if (session('success'))
-                <span class="py-1 px-2 bg-green-300 rounded-sm">{{ session('success') }}</span>
+                <span class="py-1 px-2 bg-blue-300 rounded-sm">{{ session('success') }}</span>
                 @endif
                 <div class="id-admin-parent">
                     <b class="id-admin">ID Admin</b>

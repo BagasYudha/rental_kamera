@@ -22,7 +22,7 @@
                     <h1 class="welcomeback-mimin">Lupa Password</h1>
                 </div>
                 @if (session('message'))
-                    <span class="py-1 px-2 bg-green-300 rounded-sm">{{ session('message') }}</span>
+                    <span class="py-1 px-2 bg-blue-300 rounded-sm">{{ session('message') }}</span>
                 @endif
                 <input type="hidden" name="admin-token" value="{{ $admin->token }}">
                 <div class="id-admin-parent">

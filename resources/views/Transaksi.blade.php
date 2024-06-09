@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="px-[20px] font-['Poppins'] justify-between items-center flex w-full h-20 bg-[#e8fffb67] backdrop-blur-sm border-b-[1px] border-white">
+    <nav class="px-[20px] font-['Poppins'] justify-between items-center flex w-full h-20 bg-[#ffffff67] backdrop-blur-sm border-b-[1px] border-white">
         <div class="justify-start w-56 h-full bg-cover bg-center" style="background-image: url('Media/Logo-hitam.png')">
         </div>
         <div class="flex justify-end w-full h-full items-center font-sans">
@@ -56,7 +56,11 @@
                             @method('DELETE')
                             <button type="submit" class="tombol">
                                 <box-icon name='check' color="white" size="35px"></box-icon>
+<<<<<<< HEAD
                             </button>                        
+=======
+                            </button>
+>>>>>>> 778476958a2a3cc5ea44da181797fc81b147a178
                         </form>
                     </td>
                 </tr>
