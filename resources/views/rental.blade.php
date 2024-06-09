@@ -9,11 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
-
-
 </head>
 
 <body class="bg-[#E8FFFB] font-['Poppins'] w-full overflow-x-hidden">
@@ -39,19 +36,13 @@
                 <!-- Menu -->
                 <div class="mt-2 font-bold text-black flex-wrap">
                     <a href="#camera">
-                        <h1 class="mt-3 mr-3 inline-block  border-2 border-[#8152fb] hover:text-[#8152FB] rounded-full p-1 px-5">Kamera</h1>
+                        <h1 class="mt-3 mr-3 inline-block border-2 border-[#8152fb] hover:text-[#8152FB] rounded-full p-1 px-5">Kamera</h1>
                     </a>
                     <a href="#lensa">
                         <h1 class="mt-3 mr-3 inline-block hover:text-[#8152FB] border-2 border-[#8152fb] rounded-full p-1 px-5">Lensa</h1>
                     </a>
-                    <a href="#">
-                        <h1 class="mt-3 mr-3 inline-block hover:text-[#8152FB] border-2 border-[#8152fb] rounded-full p-1 px-5">Lightning</h1>
-                    </a>
-                    <a href="#">
+                    <a href="#tripod">
                         <h1 class="mt-3 mr-3 inline-block hover:text-[#8152FB] border-2 border-[#8152fb] rounded-full p-1 px-5">Tripod</h1>
-                    </a>
-                    <a href="#">
-                        <h1 class="mt-3 mr-3 inline-block hover:text-[#8152FB] border-2 border-[#8152fb] rounded-full p-1 px-5">Aksesoris</h1>
                     </a>
                 </div>
             </div>
@@ -60,19 +51,56 @@
         <!-- CONTAIN 1 END-->
 
         <!-- RENTAL -->
-        <div class="right-0 w-2/3">
+        <div class="right-0 w-2/3 my-12">
             <!-- camera -->
             <section id="camera" class="flex flex-wrap gap-4">
                 <!-- Item -->
-
-                @foreach ($products as $product)
-                <a href="/spesifikasi">
+                @foreach ($cameras as $product)
+                <a href="{{ route('spesifikasi.show', $product->id) }}">
                     <div class="link-item">
-                        <div class="h-2/5 ">
-                            <img src="{{ asset('/storage/products/' . $product->image) }}" alt="{{ $product->nama_item }}" style="object-fit:cover" class="w-[154px] h-[154px] " />
+                        <div class="h-2/5">
+                            <img src="{{ asset('/storage/products/' . $product->image) }}" alt="{{ $product->nama_item }}" style="object-fit:cover" class="w-[154px] h-[154px]" />
                         </div>
                         <div class="mt-4">
-                            <h1 class="font-bold mt-[-8px]">{{$product->nama_item}}</h1>
+                            <h1 class="shorten-text font-bold mt-[-8px]">{{ $product->nama_item }}</h1>
+                            <p class="font-normal text-xs">Tersedia {{ $product->stock }}</p>
+                            <h1 class="text-[#8152fb] font-semibold">{{ "Rp " . number_format($product->price,2,',','.') }}</h1>
+                        </div>
+                    </div>
+                </a>
+                @endforeach
+                <!-- item end  -->
+            </section>
+
+            <section id="lensa" class="flex flex-wrap gap-4 mt-4">
+                <!-- Item -->
+                @foreach ($lensas as $product)
+                <a href="{{ route('spesifikasi.show', $product->id) }}">
+                    <div class="link-item">
+                        <div class="h-2/5">
+                            <img src="{{ asset('/storage/products/' . $product->image) }}" alt="{{ $product->nama_item }}" style="object-fit:cover" class="w-[154px] h-[154px]" />
+                        </div>
+                        <div class="mt-4">
+                            <h1 class="shorten-text font-bold mt-[-8px]">{{ $product->nama_item }}</h1>
+                            <p class="font-normal text-xs">Tersedia {{ $product->stock }}</p>
+                            <h1 class="text-[#8152fb] font-semibold">{{ "Rp " . number_format($product->price,2,',','.') }}</h1>
+                        </div>
+                    </div>
+                </a>
+                @endforeach
+                <!-- item end  -->
+            </section>
+
+            <section id="tripod" class="flex flex-wrap gap-4 mt-4">
+                <!-- Item -->
+                @foreach ($tripods as $product)
+                <a href="{{ route('spesifikasi.show', $product->id) }}">
+                    <div class="link-item">
+                        <div class="h-2/5">
+                            <img src="{{ asset('/storage/products/' . $product->image) }}" alt="{{ $product->nama_item }}" style="object-fit:cover" class="w-[154px] h-[154px]" />
+                        </div>
+                        <div class="mt-4">
+                            <h1 class="shorten-text font-bold mt-[-8px]">{{ $product->nama_item }}</h1>
                             <p class="font-normal text-xs">Tersedia {{ $product->stock }}</p>
                             <h1 class="text-[#8152fb] font-semibold">{{ "Rp " . number_format($product->price,2,',','.') }}</h1>
                         </div>
@@ -82,12 +110,19 @@
                 <!-- item end  -->
             </section>
         </div>
-        <!-- lensa end -->
-
+        <!-- RENTAL END -->
     </section>
-    </div>
-    <!-- RENTAL END -->
-    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var elements = document.querySelectorAll('.shorten-text');
+            elements.forEach(function(element) {
+                var text = element.innerText;
+                if (text.length > 13) {
+                    element.innerText = text.substring(0, 13) + '...';
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

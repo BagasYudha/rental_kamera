@@ -16,12 +16,6 @@ class ProductController extends Controller
         return view('products.index', compact('products'));
     }
 
-    public function rentalProduk(): View
-    {
-        $products = Product::all();
-        return view('rental', compact('products'));
-    }
-
     public function create(): View
     {
         return view('products.create');
@@ -102,5 +96,20 @@ class ProductController extends Controller
         Storage::delete('public/products/' . $product->image);
         $product->delete();
         return redirect()->route('products.index')->with(['success' => 'Data Berhasil Dihapus!']);
+    }
+
+
+    public function rentalProduk(): View
+    {
+        $cameras = Product::where('categories', 'kamera')->get();
+        $lensas = Product::where('categories', 'lensa')->get();
+        $tripods = Product::where('categories', 'tripod')->get();
+        return view('rental', compact('cameras', 'lensas', 'tripods'));
+    }
+
+    public function showSpesifikasi(string $id): View
+    {
+        $product = Product::findOrFail($id);
+        return view('spesifikasi', compact('product'));
     }
 }
