@@ -13,18 +13,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <nav class="px-[20px] font-['Poppins'] justify-between items-center flex w-full h-20 bg-[#e8fffb67] backdrop-blur-sm border-b-[1px] border-white">
-        <a href="/adminlog" class="justify-start w-56 h-full bg-cover bg-center" style="background-image: url('Media/Logo-hitam.png')">
-        </a>
-        <div class="flex justify-end w-full h-full items-center font-sans">
+<body class="bg-[#E8FFFB] font-['Poppins']">
+
+    <!-- NAVBAR -->
+    <nav class="px-2 md:px-5 font-['Poppins'] justify-between items-center flex w-full h-12 md:h-20 bg-[#e8fffb67] backdrop-blur-sm border-b-[1px] md:border-white">
+        <a href="/adminlog" class="justify-start w-32 md:w-56 h-full bg-cover flex items-center bg-center" style="background-image: url('Media/Logo-hitam.png')"></a>
+        <div class="flex md:hidden">
+            <button id="menu-btn" class="text-black focus:outline-none pr-2 md:pr-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="menu" class="hidden md:flex justify-end w-full h-full items-center font-sans md:space-x-4">
             <a href="/" class="link font-bold px-3 py-2 mx-3">Beranda</a>
             <a href="/rental" class="link font-bold px-3 py-2 mx-3">Rental</a>
             <a href="/#Contact" class="link font-bold px-3 py-2 mx-3">Hubungi Kami</a>
         </div>
     </nav>
-</body>
 
-</html>
+    <!-- DROPDOWN MENU FOR MOBILE -->
+    <div id="dropdown-menu" class="hidden md:hidden absolute top-20 left-0 right-0 bg-[#e8fffb67] backdrop-blur-sm border-b-[1px] border-white flex flex-col text-sm items-center z-10">
+        <a href="/" class="link font-bold px-6 py-2 mx-3 w-full text-end">Beranda</a>
+        <a href="/rental" class="link font-bold px-6 py-2 mx-3 w-full text-end">Rental</a>
+        <a href="/#Contact" class="link font-bold px-6 py-2 mx-3 w-full text-end">Hubungi Kami</a>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+
+        menuBtn.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
 
 </html>

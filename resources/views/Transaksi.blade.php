@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,11 +57,7 @@
                             @method('DELETE')
                             <button type="submit" class="tombol">
                                 <box-icon name='check' color="white" size="35px"></box-icon>
-<<<<<<< HEAD
-                            </button>                        
-=======
                             </button>
->>>>>>> 778476958a2a3cc5ea44da181797fc81b147a178
                         </form>
                     </td>
                 </tr>
@@ -70,4 +67,5 @@
         {{ $transaksis->links() }}
     </div>
 </body>
+
 </html>
