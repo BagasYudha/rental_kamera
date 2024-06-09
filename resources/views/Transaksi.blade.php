@@ -57,6 +57,8 @@
                             @method('DELETE')
                             <button type="submit" class="tombol">
                                 <box-icon name='check' color="white" size="35px"></box-icon>
+                            </button>                        
+
                             </button>
                         </form>
                     </td>

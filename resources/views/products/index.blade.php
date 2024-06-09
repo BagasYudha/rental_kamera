@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
+<body style="background: lightcyan"></body>
 <body class="bg-[#ffffff] font-['Poppins'] w-full overflow-x-hidden">
     <!-- NAVBAR -->
     <div class="fixed w-full z-20 top-0">

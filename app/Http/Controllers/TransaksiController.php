@@ -34,11 +34,12 @@ class TransaksiController extends Controller
         $product = Product::where('nama_item', $request->nama_item)->first();
 
         // Periksa apakah produk ditemukan dan stok mencukupi
-        if ($product && $product->stok <= 0) {
+        if ($product && $product->stock <= 0) {
             return redirect()->back()->with('error', 'Stok produk sudah habis, tidak dapat menambahkan transaksi baru.');
         }
 
         // Lanjutkan proses penyimpanan transaksi jika stok mencukupi
+
         Transaksi::create([
             'nama' => $request->nama,
             'jaminan' => $request->jaminan,

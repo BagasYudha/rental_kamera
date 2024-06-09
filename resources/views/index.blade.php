@@ -28,9 +28,9 @@
         <div class="flex w-full">
             <!-- div teks -->
             <div class="md:mt-36 z-10">
-                <h3 class="text-2xl">Selamat datang di</h3>
-                <h1 class="font-semibold text-8xl" style="background: linear-gradient(to right, #4F46E5, #02CCFE); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent; ">KaryCam!</h1>
-                <p class="mt-3 text-xl">
+                <h3 class="text-base md:text-2xl">Selamat datang di</h3>
+                <h1 class="font-semibold text-3xl md:text-8xl" style="background: linear-gradient(to right, #4F46E5, #02CCFE); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent; ">KaryCam!</h1>
+                <p class="mt-3 text-base md:text-xl">
                     Kami merupakan perusahaan jasa rental kamera <br>
                     yang didirikan oleh Adi Alam, Bagas Yudha, Bintang Raka, <br>
                     dan Muhammand Miftahul Karim.
