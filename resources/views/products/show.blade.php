@@ -10,7 +10,11 @@
 </head>
 
 <body>
-
+    <!-- NAVBAR -->
+    <div class="fixed w-full z-20 top-0">
+        @include('products.navbarAdmin')
+    </div>
+    <!-- NAVBAR END -->
     <div class="container mt-5 mb-5">
         <div class="row">
             <div class="col-md-4">
