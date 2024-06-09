@@ -33,7 +33,7 @@
     </nav>
 
     <!-- DROPDOWN MENU FOR MOBILE -->
-    <div id="dropdown-menu" class="hidden md:hidden absolute top-20 left-0 right-0 bg-[#e8fffb67] backdrop-blur-sm border-b-[1px] border-white flex flex-col text-sm items-center z-10">
+    <div id="dropdown-menu" class="hidden md:hidden absolute left-0 right-0 bg-[#e8fffb67] backdrop-blur-sm border-b-[1px] border-white flex flex-col text-sm items-center z-10">
         <a href="/" class="link font-bold px-6 py-2 mx-3 w-full text-end">Beranda</a>
         <a href="/rental" class="link font-bold px-6 py-2 mx-3 w-full text-end">Rental</a>
         <a href="/#Contact" class="link font-bold px-6 py-2 mx-3 w-full text-end">Hubungi Kami</a>

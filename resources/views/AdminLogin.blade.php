@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="adminlogin.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
 </head>
 
-<body class="bg-gray-100 font-sans">
+<body class="font-sans">
 
     <div class="login-admin">
         <div class="login-admin-inner">
@@ -45,7 +46,7 @@
                 </button>
             </form>
         </div>
-        <div class="ellipse-parent">
+        <div class="ellipse-parent md:block hidden">
             <div class="ellipse-div"></div>
             <img class="c002-xa75-primary-1-icon" loading="lazy" alt="" src="Media/imageadminlogin.png">
         </div>
@@ -58,9 +59,5 @@
         @endforeach
     </script>
     @endif -->
-
-
-
 </body>
-
 </html>

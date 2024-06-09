@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="bg-[#E8FFFB] font-['Poppins'] w-full overflow-x-hidden">
+<body class="bg-[#E8FFFB] font-['Poppins'] w-full h-auto overflow-x-hidden">
 
     <!-- NAVBAR -->
     <div class="fixed w-full z-20">
@@ -24,23 +24,23 @@
     <!-- NAVBAR END -->
 
     <!-- CONTAIN 1 -->
-    <section id="Home" class="pt-32 px-[50px]">
-        <div class="flex w-full">
+    <section id="Home" class="pt-16 md:pt-32 px-6 md:px-[50px] overflow-x-hidden">
+        <div class="md:flex w-full ">
             <!-- div teks -->
-            <div class="md:mt-36 z-10">
-                <h3 class="text-base md:text-2xl">Selamat datang di</h3>
-                <h1 class="font-semibold text-3xl md:text-8xl" style="background: linear-gradient(to right, #4F46E5, #02CCFE); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent; ">KaryCam!</h1>
-                <p class="mt-3 text-base md:text-xl">
-                    Kami merupakan perusahaan jasa rental kamera <br>
-                    yang didirikan oleh Adi Alam, Bagas Yudha, Bintang Raka, <br>
+            <div class="md:mt-36 z-10 md:text-left text-center">
+                <h3 class="text-sm md:text-2xl">Selamat datang di</h3>
+                <h1 class="font-semibold text-5xl md:text-8xl" style="background: linear-gradient(to right, #4F46E5, #02CCFE); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent; ">KaryCam!</h1>
+                <p class="md:mt-3 text-xs md:text-xl w-full">
+                    Kami merupakan perusahaan jasa rental kamera
+                    yang didirikan oleh Adi Alam, Bagas Yudha, Bintang Raka,
                     dan Muhammand Miftahul Karim.
                 </p>
             </div>
             <!-- div gambar -->
-            <div class="absolute right-[-300px] mt-[-30px]">
-                <div class="relative">
+            <div class="mt-[10px] md:mt-[-30px] aspect-square h-[400px] md:h-[1000px]">
+                <div class="relative md:right-[-50px] ">
                     <a href="/adminlog">
-                        <img src="Media/imageadminlogin.png" alt="Gambar kamera" class="top-0 z-1">
+                        <img src="Media/imageadminlogin.png" alt="Gambar kamera" class="z-1">
                     </a>
                     <span class="absolute top-0 w-full -z-10">
                         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full">
@@ -55,22 +55,22 @@
     <!-- CONTAIN 1 END -->
 
     <!-- CONTAIN 2 -->
-    <section id="Contact" class="px-[50px] mt-[450px] z-10">
-        <div class="font-semibold text-6xl text-black">
+    <section id="Contact" class="overflow-x-hidden px-6 md:px-[50px] z-10">
+        <div class="font-semibold text-2xl md:text-6xl text-black">
             <h1 class="">Ada Project ?</h1>
-            <h1 class="mt-3">Konsultasi peralatan ?</h1>
-            <h1 class="mt-3">Mau sewa gear produksi ?</h1>
-            <h1 class="mt-3">Atau ngajak mimin ngopi ?</h1>
+            <h1 class="md:mt-3">Konsultasi peralatan ?</h1>
+            <h1 class="md:mt-3">Mau sewa gear produksi ?</h1>
+            <h1 class="md:mt-3">Atau ngajak mimin ngopi ?</h1>
         </div>
         <!-- Footer Start -->
-        <footer class="mt-20 flex bottom-0 ">
-            <div class="flex items-center z-10 ">
+        <footer class="mt-6 md:mt-20 flex bottom-0 ">
+            <div class="md:flex items-center z-10 ">
                 <!-- Contact -->
-                <div class="flex border-r-[5px] border-r-[#8152FB] w-[250px]">
+                <div class="flex md:border-r-[5px] md:border-r-[#8152FB] w-full md:w-[250px]">
                     <a href="https://wa.me/6281331571129" target="_blank">
                         <div class="flex items-center ">
-                            <i class="bordertext-black w-16 h-16 text-black hover:text-[#25d366]" data-feather="message-circle"></i>
-                            <div class="mx-3 w-40 items-center text-xl font-medium text-black hover:text-[#8152FB]">
+                            <i class="bordertext-black w-6 h-6 md:w-16 md:h-16 text-black hover:text-[#25d366]" data-feather="message-circle"></i>
+                            <div class="mx-3 w-full md:w-40 items-center text-sm md:text-xl font-medium text-black hover:text-[#8152FB]">
                                 <h3>Kalo mau chat klik disini!</h3>
                             </div>
                         </div>
@@ -79,11 +79,11 @@
                 <!-- Contact End -->
 
                 <!-- Location -->
-                <div class="ml-4 flex border-r-[5px] border-r-[#8152FB] w-[220px] ">
+                <div class="md:ml-4 md:border-r-[5px] md:border-r-[#8152FB] w-full md:w-[250px] ">
                     <a href="https://maps.app.goo.gl/yJyt7GwZaoZVRmHs7?g_st=ic" target="_blank" class="">
                         <div class="flex items-center ">
-                            <i class="bordertext-black w-16 h-16 text-black hover:text-red-600" data-feather="map-pin"></i>
-                            <div class="mx-3 w-40 items-center text-xl font-medium text-black hover:text-[#8152FB]">
+                            <i class="bordertext-black w-6 h-6 md:w-16 md:h-16 text-black hover:text-red-600" data-feather="map-pin"></i>
+                            <div class="mx-3 w-full md:w-40 items-center text-sm md:text-xl font-medium text-black hover:text-[#8152FB]">
                                 <h3>Mau ketemu mimin?</h3>
                             </div>
                         </div>
@@ -92,11 +92,11 @@
                 <!-- Location End -->
 
                 <!-- Instagram  -->
-                <div class="ml-4 flexs w-[250px] z-10">
+                <div class="md:ml-4  w-full md:w-[250px]">
                     <a href="https://www.instagram.com/instagram?igsh=MXcycjNmZTFmcW4ycQ==" target="_blank" class="">
                         <div class="flex items-center  ">
-                            <i class="bordertext-black w-16 h-16 text-black hover:text-[#ee2a7b]" data-feather="instagram"></i>
-                            <div class="mx-3 w-40 items-center text-xl font-medium text-black hover:text-[#8152FB]">
+                            <i class="bordertext-black w-6 h-6 md:w-16 md:h-16 text-black hover:text-[#ee2a7b]" data-feather="instagram"></i>
+                            <div class="mx-3 w-full md:w-40 items-center text-sm md:text-xl font-medium text-black hover:text-[#8152FB]">
                                 <h3>Mau stalk yaa?</h3>
                             </div>
                         </div>
@@ -105,9 +105,9 @@
                 <!-- Instagram End -->
             </div>
             <!-- Footer Image -->
-            <div class="absolute mt-[-150px] right-[-140px] w-[700px] h-auto">
+            <div class="absolute mt-[50px] md:mt-[-150px] right-0 md:right-[-140px] w-[300px] md:w-[700px] h-auto">
                 <div class="">
-                    <img src="Media/Lens-foot.png" alt="Gambar kamera" class="bottom-0 top-0 -z-10">
+                    <img src="Media/Lens-foot.png" alt="Gambar kamera" class="bottom-0 -z-10">
                     </span>
                 </div>
             </div>

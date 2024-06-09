@@ -1,25 +1,25 @@
 body {
-  margin: 0;
-  line-height: normal;
+    margin: 0;
+    line-height: normal;
 }
 
 :root {
-  /* fonts */
-  --font-poppins: Poppins;
+    /* fonts */
+    --font-poppins: Poppins;
 
-  /* font sizes */
-  --font-size-base: 16px;
-  --font-size-xl: 20px;
+    /* font sizes */
+    --font-size-base: 16px;
+    --font-size-xl: 20px;
 
-  /* Colors */
-  --color-white: #ffefef;
-  --color-black: #000;
+    /* Colors */
+    --color-white: #ffefef;
+    --color-black: #000;
 
-  /* Paddings */
-  --padding-xl: 20px;
+    /* Paddings */
+    --padding-xl: 20px;
 
-  /* Border radiuses */
-  --br-xl: 20px;
+    /* Border radiuses */
+    --br-xl: 20px;
 }
 
 .frame-child {
@@ -33,10 +33,10 @@ body {
     left: 0;
     border-radius: 50px;
     background-color: var(--color-white);
-    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1);
     mix-blend-mode: luminosity;
-  }
-  .welcomeback-mimin {
+}
+.welcomeback-mimin {
     margin: 0;
     height: 97.1px;
     flex: 1;
@@ -48,16 +48,16 @@ body {
     text-align: center;
     display: inline-block;
     z-index: 1;
-  }
-  .welcomeback-mimin-wrapper {
+}
+.welcomeback-mimin-wrapper {
     align-self: stretch;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 0 40px 6.2999999999999545px 39.19999999999982px;
-  }
-  .id-admin {
+}
+.id-admin {
     width: 223.4px;
     height: 20.9px;
     position: relative;
@@ -68,19 +68,19 @@ body {
     text-align: left;
     flex-shrink: 0;
     z-index: 1;
-  }
-  .frame-item {
+}
+.frame-item {
     height: 41.7px;
     width: 360.9px;
     position: relative;
     border-radius: var(--br-xl);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--color-black);
     box-sizing: border-box;
     display: none;
     max-width: 100%;
-  }
-  .masukan-id-admin {
+}
+.masukan-id-admin {
     width: 500px;
     border: 0;
     outline: 0;
@@ -94,29 +94,29 @@ body {
     display: inline-block;
     padding: 0;
     z-index: 2;
-  }
-  .id-admin-parent,
-  .rectangle-group {
+}
+.id-admin-parent,
+.rectangle-group {
     align-self: stretch;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-  }
-  .rectangle-group {
+}
+.rectangle-group {
     border-radius: var(--br-xl);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--color-black);
     flex-direction: row;
     padding: 15px 20px 15px;
     flex-shrink: 0;
     z-index: 1;
-  }
-  .id-admin-parent {
+}
+.id-admin-parent {
     flex-direction: column;
     gap: 16.799999999999955px;
     max-width: 100%;
-  }
-  .password {
+}
+.password {
     width: 190.7px;
     height: 20.1px;
     position: relative;
@@ -127,19 +127,19 @@ body {
     text-align: left;
     flex-shrink: 0;
     z-index: 1;
-  }
-  .frame-inner {
+}
+.frame-inner {
     height: 42.5px;
     width: 360.9px;
     position: relative;
     border-radius: var(--br-xl);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--color-black);
     box-sizing: border-box;
     display: none;
     max-width: 100%;
-  }
-  .masukan-password {
+}
+.masukan-password {
     width: 500px;
     border: 0;
     outline: 0;
@@ -153,40 +153,40 @@ body {
     display: inline-block;
     padding: 0;
     z-index: 2;
-  }
-  .password-parent,
-  .rectangle-container {
+}
+.password-parent,
+.rectangle-container {
     align-self: stretch;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     max-width: 100%;
-  }
-  .rectangle-container {
+}
+.rectangle-container {
     border-radius: var(--br-xl);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--color-black);
     box-sizing: border-box;
     flex-direction: row;
     padding: 12px 20px 1px;
     z-index: 1;
-  }
-  .password-parent {
+}
+.password-parent {
     flex-direction: column;
     gap: 23.799999999999955px;
-  }
-  .rectangle-div {
+}
+.rectangle-div {
     position: absolute;
     top: 0;
     left: 0;
     border-radius: var(--br-xl);
     background-color: rgba(4, 169, 240, 0.81);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 100%;
     cursor: pointer;
-  }
-  .masuk {
+}
+.masuk {
     position: absolute;
     top: 10.4px;
     left: 103.1px;
@@ -198,8 +198,8 @@ body {
     width: 140.7px;
     height: 23.3px;
     z-index: 1;
-  }
-  .group-button {
+}
+.group-button {
     cursor: pointer;
     border: 0;
     padding: 0;
@@ -208,16 +208,16 @@ body {
     height: 48.9px;
     position: relative;
     z-index: 1;
-  }
-  .login-admin-inner,
-  .rectangle-parent {
+}
+.login-admin-inner,
+.rectangle-parent {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     max-width: 100%;
-  }
-  .rectangle-parent {
+}
+.rectangle-parent {
     margin: 0;
     align-self: stretch;
     padding: 40.5px 27.100000000000364px 69.70000000000005px;
@@ -225,14 +225,14 @@ body {
     position: relative;
     gap: 37.200000000000045px;
     border-radius: 50px;
-    box-shadow: 1px 1px 14px 12px rgba(0, 0, 0, 0.25); /*shadow box*/
-  }
-  .login-admin-inner {
+    box-shadow: 1px 1px 14px 12px rgba(0, 0, 0, 0.1); /*shadow box*/
+}
+.login-admin-inner {
     height: 648px;
     width: 416.5px;
     min-width: 416.5px;
-  }
-  .ellipse-div {
+}
+.ellipse-div {
     position: absolute;
     top: 93px;
     left: 0;
@@ -240,8 +240,8 @@ body {
     background-color: #33baff;
     width: 613px;
     height: 591px;
-  }
-  .c002-xa75-primary-1-icon {
+}
+.c002-xa75-primary-1-icon {
     position: absolute;
     top: 0;
     left: 22px;
@@ -249,19 +249,18 @@ body {
     height: 684px;
     object-fit: cover;
     z-index: 1;
-  }
-  .ellipse-parent {
+}
+.ellipse-parent {
     height: 539px;
     width: 544px;
     position: relative;
     min-width: 544px;
     max-width: 100%;
-  }
-  .login-admin {
+}
+.login-admin {
     width: 100%;
     position: relative;
-    background-color: #e8fffb;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -271,48 +270,48 @@ body {
     box-sizing: border-box;
     letter-spacing: normal;
     gap: 20px;
-  }
-  @media screen and (max-width: 1050px) {
+}
+@media screen and (max-width: 1050px) {
     .ellipse-parent,
     .login-admin-inner {
-      flex: 1;
+        flex: 1;
     }
     .login-admin {
-      flex-wrap: wrap;
-      padding-left: var(--padding-xl);
-      padding-right: var(--padding-xl);
-      padding-bottom: var(--padding-xl);
-      box-sizing: border-box;
+        flex-wrap: wrap;
+        padding-left: var(--padding-xl);
+        padding-right: var(--padding-xl);
+        padding-bottom: var(--padding-xl);
+        box-sizing: border-box;
     }
-  }
-  @media screen and (max-width: 1000px) {
+}
+@media screen and (max-width: 1000px) {
     .welcomeback-mimin {
-      font-size: 30px;
+        font-size: 30px;
     }
-  }
-  @media screen and (max-width: 725px) {
+}
+@media screen and (max-width: 725px) {
     .rectangle-parent {
-      padding-top: 26px;
-      padding-bottom: 45px;
-      box-sizing: border-box;
+        padding-top: 26px;
+        padding-bottom: 45px;
+        box-sizing: border-box;
     }
     .ellipse-parent,
     .login-admin-inner {
-      min-width: 100%;
+        min-width: 100%;
     }
-  }
-  @media screen and (max-width: 450px) {
+}
+@media screen and (max-width: 450px) {
     .welcomeback-mimin {
-      font-size: 23px;
+        font-size: 23px;
     }
     .id-admin,
     .password {
-      font-size: var(--font-size-base);
+        font-size: var(--font-size-base);
     }
     .masuk {
-      font-size: 18px;
+        font-size: 18px;
     }
     .rectangle-parent {
-      gap: 19px 37.2px;
+        gap: 19px 37.2px;
     }
-  }
+}
