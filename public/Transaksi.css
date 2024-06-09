@@ -93,6 +93,14 @@ body {
   text-align: left;
 }
 
+.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .tombol {
   background-color: #864AFA; 
   color: #ffffff;
@@ -107,6 +115,7 @@ body {
 
 .tombol box-icon {
   margin-left: 1px;
+  vertical-align: middle;
 }
 
 .tombol:hover{

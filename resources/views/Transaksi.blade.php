@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +8,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="Transaksi.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
-
 </head>
 
 <body>
@@ -40,7 +37,6 @@
                     <th scope="col">Jam Ambil</th>
                     <th scope="col">Tanggal Ambil</th>
                     <th scope="col">Tanggal Kembali</th>
-                    <th scope="col"></th>
                     <th scope="col">Aksi</th>
                 </tr>
             </thead>
@@ -54,13 +50,12 @@
                     <td>{{ $transaksi->jamAmbil }}</td>
                     <td>{{ $transaksi->tglAmbil }}</td>
                     <td>{{ $transaksi->tglKembali }}</td>
-                    <td>{{ $transaksi->aksi }}</td>
-                    <td class="text-center">
+                    <td class="aksi-cell">
                         <form action="{{ route('transaksi.destroy', $transaksi->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="tombol">
-                                <box-icon name='check' color="white"  size="35px"></box-icon>
+                                <box-icon name='check' color="white" size="35px"></box-icon>
                             </button>                        
                         </form>
                     </td>
@@ -70,13 +65,5 @@
         </table>
         {{ $transaksis->links() }}
     </div>
-    </div>
-    </div>
-    </div>
-    </div>
-
-
-
 </body>
-
 </html>

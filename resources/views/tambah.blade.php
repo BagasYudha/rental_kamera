@@ -6,10 +6,34 @@
     <title>Tambah Transaksi</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="{{ asset('tambah.css') }}">
+    <style>
+        .alert {
+            padding: 15px;
+            background-color: #f44336;
+            color: white;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .alert.success {background-color: #4CAF50;}
+    </style>
 </head>
 <body>
     <div class="container">
         <h2>Tambah Transaksi</h2>
+
+        @if (session('error'))
+            <div class="alert">
+                {{ session('error') }}
+            </div>
+        @endif
+
+        @if (session('success'))
+            <div class="alert success">
+                {{ session('success') }}
+            </div>
+        @endif
+
         <form action="{{ route('transaksi.store') }}" method="POST" enctype="multipart/form-data">
             @csrf 
             <div class="form-group">
